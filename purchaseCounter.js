@@ -6,7 +6,7 @@ function initializeCounter() {
 
     // Si no hay un valor almacenado, inicializa a 100
     if (!count) {
-        count = 100; // Número inicial de personas que han adquirido el programa
+        count = 1; // Número inicial de personas que han adquirido el programa
         localStorage.setItem('purchaseCount', count);
     }
 
