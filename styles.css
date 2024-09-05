@@ -1,787 +1,215 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #1a0023; /*aqui cambias el color de fondo de la pagina en general*/
-   /* background-image: url('img/fondo\ general.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
-    background-position: center; /* Centra la imagen */
-    color: #fff;
-}
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #1a0023; /* Cambias el color de fondo de la página en general */
+            background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
+            background-position: center; /* Centra la imagen */
+            color: #fff;
+        }
 
-.container {
-    max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
-    margin: 50px auto; /* Margen superior e inferior de 50px */
-    padding: 20px;
-    background-color: #25002d; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ff0076; /* Menos difuminado */
-}
+        .container {
+            max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #25002d; /* Fondo negro */
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff0076; /* Menos difuminado */
+        }
 
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+        }
 
-h1 {
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
-}
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
 
-.video-container {
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 12px;
-    overflow: hidden;
-}
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3);
+        }
 
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3);
-}
+        .highlight {
+            text-align: center;
+            margin-bottom: 20px;
+            background: #1a0012;
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076;
+        }
 
-.highlight {
-    text-align: center;
-    margin-bottom: 20px;
-    background: #1a0012;
-    padding: 12px;
-    border-radius: 5px;
-    box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto neón */
-}
+        .highlight h2, .highlight p {
+            margin: 10px 0;
+        }
 
-.highlight h2, .highlight p {
-    margin: 10px 0;
-}
+        .highlight-text {
+            color: #00ff00;
+            font-weight: bold;
+        }
 
-.highlight-text {
-    color: #00ff00;
-    font-weight: bold;
-}
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
 
-.countdown {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
+        .countdown-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
 
-.countdown-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-}
+        .countdown-section span {
+            display: block;
+            color: #00ff00;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+        }
 
-.countdown-section span {
-    display: block;
-    color: #00ff00;
-    font-weight: bold;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
-}
+        .label {
+            margin-top: 5px;
+            color: #fff;
+        }
 
-.label {
-    margin-top: 5px;
-    color: #fff;
-}
+        .offer, .price {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.offer, .price {
-    text-align: center;
-    margin: 20px 0;
-}
+        .offer {
+            color: #ffff00;
+            font-size: 1.5em;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+        }
 
-.offer {
-    color: #ffff00;
-    font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
-}
+        .price {
+            color: #ff0000;
+            font-size: 1.5em;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+        }
 
-.price {
-    color: #ff0000;
-    font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
-}
+        .cta-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #ffff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-shadow: 0 0 3px #000;
+            box-shadow: 0 0 3px rgba(255, 255, 0, 0.5);
+            transition: background 0.3s ease;
+        }
 
-.cta-button {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 30px;
-    background-color: #ffff00; /* Color amarillo */
-    color: #000; /* Texto negro para contraste */
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-shadow: 0 0 3px #000;
-    box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Menos difuminado en el botón */
-    transition: background 0.3s ease;
-}
+        .cta-button:hover {
+            background-color: #e6e600;
+            box-shadow: 0 0 8px rgba(255, 255, 0, 0.5);
+        }
 
-.cta-button:hover {
-    background-color: #e6e600; /* Amarillo más oscuro al pasar el cursor */
-    box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Menos difuminado en el hover */
-}
+        .program {
+            margin-bottom: 20px;
+        }
 
-.program {
-    margin-bottom: 20px;
-}
+        .program h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-.program h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+        .program ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
 
-.program ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
+        footer a {
+            color: #000;
+            text-decoration: none;
+        }
 
-footer a {
-    color: #000000; /* Colo de aviso legal */
-    text-decoration: none;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .offer, .price {
+                font-size: 1.2em;
+            }
+
+            .highlight {
+                padding: 15px;
+            }
+
+            .info-container {
+                padding: 15px;
+                font-size: 0.9em;
+            }
+
+            .program ul {
+                margin-left: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .cta-button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+
+            .offer, .price {
+                font-size: 1em;
+            }
+
+            .highlight {
+                padding: 10px;
+            }
+
+            .countdown {
+                font-size: 1.2em;
+            }
+
+            .info-container {
+                padding: 10px;
+                font-size: 0.8em;
+            }
+        }
     
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-    
-    .offer, .price {
-        font-size: 1.2em;
-    }
-    
-    .highlight {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-    
-    .cta-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
-    }
-    
-    .offer, .price {
-        font-size: 1em;
-    }
-    
-    .highlight {
-        padding: 10px;
-    }
-    
-    .countdown {
-        font-size: 1.2em;
-    }
-}
-
-.info-container {
-    background-color: #1a1a1a; /* Fondo oscuro para contraste */
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Margen superior e inferior */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    max-width: 90%; /* Tamaño máximo del contenedor */
-    margin: 20px auto; /* Centramos el contenedor y añadimos margen */
-}
-
-.info-container h2 {
-    font-size: 1.5em; /* Tamaño del texto de encabezado */
-    color: #fff; /* Color del texto */
-    margin-bottom: 10px; /* Espaciado inferior */
-}
-
-.info-container p {
-    font-size: 1.2em; /* Tamaño del texto del párrafo */
-    color: #ccc; /* Color del texto */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin-bottom: 10px; /* Espaciado inferior */
-}
-
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    .info-container h2 {
-        font-size: 1.2em; /* Tamaño del texto en pantallas más pequeñas */
-    }
-
-    .info-container p {
-        font-size: 1em; /* Tamaño del texto en pantallas más pequeñas */
-    }
-}
-
-/*reduce la intensidad del efecto neon del temporizador*/
-.countdown-section span {
-    display: block;
-    color: #00ff00;
-    font-weight: bold;
-    text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00; /* Menos intensidad en el efecto neón */
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
-}
-
-
-/* Ajusta la separación entre líneas */
-.info-container {
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
-                0 0 20px rgba(255, 0, 0, 0.7); /* Sombra de neón roja más intensa */
-    border: 2px solid rgba(255, 0, 0, 0.5); /* Borde sutil pero más visible rojo */
-    display: flex;
-    align-items: center; /* Alinea verticalmente */
-    gap: 20px; /* Espacio entre el texto y la imagen */
-}
-
-.info-container .text-content {
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
-}
-
-.info-container .text-content h2 {
-    font-size: 1.5em;
-    color: #000000; /* Texto negro */
-    margin-bottom: 15px;
-}
-
-.info-container .text-content p {
-    color: #000000; /* Texto negro */
-    margin: 15px 0;
-    line-height: 1.8; /* Ajusta la separación entre líneas */
-    font-weight: bold; /* Texto en negrita */
-}
-
-.info-container .text-content ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
-.info-container .text-content li {
-    color: #000000; /* Texto negro */
-    margin: 15px 0;
-    line-height: 1.8; /* Ajusta la separación entre líneas */
-    font-weight: bold; /* Texto en negrita */
-}
-
-.info-container img {
-    max-width: 200px; /* Tamaño máximo de la imagen aumentado */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Esquinas redondeadas de la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
-}
-
-
-/*estilos para la secsion de opiniones*/
-
-.opinions {
-    text-align: center;
-    padding: 20px;
-}
-
-.opinions-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.opinion-img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.opinion-img:hover {
-    transform: scale(1.1);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.modal-content img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: red;
-}
-
-
-/*ESTILOS CON EFECTO 3D DE LA VENTANA EMERGENTE*/
-
-.opinions {
-    text-align: center;
-    padding: 20px;
-}
-
-.opinions-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.opinion-img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
-}
-
-.opinion-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda al pasar el mouse */
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 15px; /* Bordes redondeados para la ventana emergente */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D para la ventana emergente */
-}
-
-.modal-content img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px; /* Borde redondeado para la imagen dentro del modal */
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close:hover {
-    color: red;
-}
-
-.highlighted-text {
-   
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
-}
-
-
-
-/* Estilos para el logo fuera del contenedor */
-/*.site-header {
-    position: relative;
-}*/
-/*
-.logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 190px; /* Ajusta el tamaño del logo según sea necesario */
-   /* height: auto; /* Mantiene la proporción del logo */
-    /*image-rendering: -webkit-optimize-contrast;*/ /* Para mejorar la nitidez en algunos navegadores */
-/*}*/
-
-
-
-.purchase-counter {
-    text-align: center;
-    margin: 40px 0;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.purchase-counter h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.counter {
-    font-size: 48px;
-    color: #ff4500;
-    font-weight: bold;
-}
-
-
-
-/* Contenedor del contador con efecto neón morado */
-.purchase-counter {
-    text-align: center;
-    margin: 50px 0;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #ff0076, 0 0 10px #ff0076, 0 0 10px #ff0076;
-    border: 2px solid rgba(128, 0, 128, 0.7);
-}
-
-/* Título con efecto 3D */
-.purchase-counter h2 {
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #c2bdbd, -2px -2px 4px rgba(255, 255, 255, 0.2);
-}
-
-/* Contador con efecto 3D */
-.counter {
-    font-size: 48px;
-    color: #6b065a;
-    font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.2);
-}
-
-
-.video-container video {
-    width: 100%;
-    height: auto;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-}
-
-
-/* Estilos para la sección del contador de compradores */
-.purchase-counter {
-    text-align: center;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-}
-
-.purchase-counter h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.counter {
-    font-size: 2em;
-    font-weight: bold;
-    color: #ff0000;
-}
-
-
-
-
-
-/*/////////////////////////////////////*/
-
-/* Contenedor principal del carrusel */
-.carousel {
-    position: relative;
-    max-width: 940px;  /* Ancho fijo de 940px */
-    height: 595px;  /* Altura fija de 595px */
-    overflow: hidden;  /* Oculta cualquier contenido que exceda las dimensiones */
-    margin: 0 auto;  /* Centra el carrusel en la página */
-}
-
-/* Contenedor interno para las imágenes */
-.carousel-inner {
-    display: flex;  /* Coloca las imágenes en fila */
-    transition: transform 0.5s ease-in-out;  /* Transición suave para los movimientos */
-}
-
-/* Estilo para las imágenes del carrusel */
-.carousel-inner img {
-    width: 100%;  /* Asegura que la imagen ocupe todo el ancho del carrusel */
-    height: 100%;  /* Asegura que la imagen ocupe toda la altura del carrusel */
-    object-fit: cover;  /* Ajusta la imagen para cubrir completamente el contenedor sin distorsión */
-}
-
-
-/* Botones de navegación */
-.carousel-button {
-    position: absolute;
-    top: 50%;  /* Centra verticalmente */
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);  /* Más oscuro al pasar el mouse */
-}
-
-/* Botón de retroceso */
-.carousel-button.prev {
-    left: 10px;  /* A la izquierda */
-}
-
-/* Botón de avance */
-.carousel-button.next {
-    right: 10px;  /* A la derecha */
-}
-
-
-
-/*estilos de la ventana del anuncio del codigo de promocion*/
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-}
-
-.modal-content {
-    background-color: rgb(255, 255, 255); /* Fondo del modal */
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    color: black; /* Color del texto */
-    font-size: 24px; /* Aumenta el tamaño del texto */
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 0, 0.7); /* Efecto neón leve */
-    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto 3D */
-}
-
-.promo-code {
-    color: red; /* Color rojo para la palabra (samba) */
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); /* Efecto de sombra roja */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-/* Estilo para el precio destacado */
-.price {
-    color: #ff5722; /* Color vivo naranja-rojizo */
-    font-size: 28px; /* Tamaño del texto mayor */
-    font-weight: bold; /* Texto en negrita */
-    background-color: #fff; /* Fondo blanco para contraste */
-    padding: 10px 20px; /* Espaciado interno reducido */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Efecto de sombra */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Efecto de sombra en el texto */
-    animation: pulse 1.5s infinite; /* Aplicación de la animación */
-    max-width: 600px; /* Ancho máximo del elemento */
-    margin: 0 auto; /* Centrar el elemento horizontalmente */
-    text-align: center; /* Centrar el texto dentro del elemento */
-    display: inline-block; /* Ajustar el ancho al contenido */
-}
-
-/* Definición de la animación de pulso */
-@keyframes pulse {
-    0% {
-        transform: scale(1); /* Tamaño normal */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal */
-    }
-    50% {
-        transform: scale(1.1); /* Aumento del tamaño */
-        box-shadow: 0 0 20px rgba(255, 87, 34, 1); /* Sombra más pronunciada */
-    }
-    100% {
-        transform: scale(1); /* Tamaño normal */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal */
-    }
-}
-
-
-
-/* Estilo para la cantidad destacada $194,000 */
-.highlight-amount {
-    color: #ff0000; /* Rojo vivo */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 28px; /* Tamaño del texto para destacarlo */
-}
-
-
-/* Estilos para el logo fuera del contenedor */
-.site-header {
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    top: 8px; /* Ajusta el valor para mover el logo más arriba */
-    left: 10px; /* Mantiene el logo alineado a la izquierda */
-    width: 190px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    image-rendering: -webkit-optimize-contrast; /* Para mejorar la nitidez en algunos navegadores */
-}
-
-
-/*codigo para el boton de whatsapp*/
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Para que el botón esté siempre visible */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(255, 253, 253, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-}
-
-
-/*anuncio en la parte superior*/
-.top-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #b9049b; /* Color de fondo rojo */
-    color: #ffffff; /* Texto blanco */
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1000; /* Asegura que esté siempre al frente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar un poco de relieve */
-}
-
-
-.highlight-amount-red {
-    color: rgb(251, 255, 0);
-}
