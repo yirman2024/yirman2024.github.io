@@ -7,7 +7,7 @@ const countdownElement = {
 };
 
 // Tiempo inicial en milisegundos (5 horas y 25 minutos)
-const initialTime = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);
+const initialTime = (9 * 60 * 60 * 1000) + (23 * 60 * 1000);
 
 function updateCountdown() {
     const now = new Date().getTime();
