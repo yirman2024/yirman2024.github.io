@@ -14,7 +14,7 @@ body {
 /* Contenedor principal */
 .container {
     max-width: 800px; /* Define el ancho máximo del contenedor */
-    margin: 50px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
+    margin: 105px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
     padding: 20px; /* Espaciado interno dentro del contenedor */
     background-color: #25002d; /* Color de fondo del contenedor */
     color: #fff; /* Color del texto dentro del contenedor */
@@ -56,7 +56,7 @@ video {
     text-align: center; /* Centra el texto dentro de la sección destacada */
     margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
     background: #1a0012; /* Fondo oscuro para resaltar */
-    padding: 12px; /* Espaciado interno dentro de la sección destacada */
+    padding: 11px; /* Espaciado interno dentro de la sección destacada */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto de neón con sombras múltiples */
 }
@@ -228,7 +228,7 @@ footer a:hover {
 /* Estilos para el contenedor de información */
 .info-container {
     background-color: #1a1a1a; /* Fondo oscuro para contraste */
-    padding: 20px; /* Espaciado interno del contenedor */
+    padding: 10px; /* Espaciado interno del contenedor */
     margin: 20px 0; /* Espacio superior e inferior */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar el contenedor */
@@ -896,3 +896,4 @@ button, .whatsapp-button {
         font-size: 16px; /* Tamaño de fuente más pequeño para los botones */
     }
 }
+
