@@ -1,546 +1,551 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #1a0023; /*aqui cambias el color de fondo de la pagina en general*/
-   /* background-image: url('img/fondo\ general.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
-    background-position: center; /* Centra la imagen */
-    color: #fff;
+    margin: 0; /* Quita el margen por defecto del cuerpo */
+    font-family: 'Arial', sans-serif; /* Fuente principal del texto */
+    background: #1a0023; /* Cambia el color de fondo de la página en general */
+    /* background-image: url('img/fondo\ general.png'); /* Ruta de la imagen de fondo, comentada para alternar */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* La imagen de fondo se mantiene fija al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Color del texto en toda la página */
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
-    margin: 50px auto; /* Margen superior e inferior de 50px */
-    padding: 20px;
-    background-color: #25002d; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ff0076; /* Menos difuminado */
+    max-width: 800px; /* Define el ancho máximo del contenedor */
+    margin: 50px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
+    padding: 20px; /* Espaciado interno dentro del contenedor */
+    background-color: #25002d; /* Color de fondo del contenedor */
+    color: #fff; /* Color del texto dentro del contenedor */
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px #ff0076; /* Sombra con un tono de rosa neón menos difuminada */
 }
 
-
+/* Encabezado principal de la página */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Centra el texto dentro del encabezado */
+    margin-bottom: 20px; /* Añade un margen inferior para separar el encabezado del contenido siguiente */
 }
 
+/* Estilos para el título principal (h1) */
 h1 {
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+    font-size: 2em; /* Tamaño de la fuente del título */
+    color: #fff; /* Color del texto del título */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Sombra suave para dar un efecto de neón menos intenso */
 }
 
+/* Contenedor para el video */
 .video-container {
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 12px;
-    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del contenedor del video */
+    margin: 20px 0; /* Margen superior e inferior para separar del contenido adyacente */
+    border-radius: 12px; /* Bordes redondeados para el contenedor del video */
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor, mantiene los bordes redondeados */
 }
 
+/* Estilos específicos para los elementos de video */
 video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3);
+    width: 100%; /* El video ocupa el 100% del ancho del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente para mantener la relación de aspecto */
+    border-radius: 12px; /* Bordes redondeados para el video */
+    box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3); /* Sombra debajo del video para darle profundidad */
 }
 
+/* Sección destacada para resaltar contenido importante */
 .highlight {
-    text-align: center;
-    margin-bottom: 20px;
-    background: #1a0012;
-    padding: 12px;
-    border-radius: 5px;
-    box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto neón */
+    text-align: center; /* Centra el texto dentro de la sección destacada */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+    background: #1a0012; /* Fondo oscuro para resaltar */
+    padding: 12px; /* Espaciado interno dentro de la sección destacada */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto de neón con sombras múltiples */
 }
 
+/* Estilos para los encabezados (h2) y párrafos dentro de la sección destacada */
 .highlight h2, .highlight p {
-    margin: 10px 0;
+    margin: 10px 0; /* Margen superior e inferior para espaciado */
 }
 
+/* Estilo para el texto destacado dentro de la sección .highlight */
 .highlight-text {
-    color: #00ff00;
-    font-weight: bold;
+    color: #00ff00; /* Color verde brillante para destacar aún más el texto */
+    font-weight: bold; /* Negrita para resaltar el texto */
 }
 
+
+/* Contenedor principal para la cuenta regresiva */
 .countdown {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    display: flex; /* Utiliza flexbox para alinear elementos en línea */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    font-size: 1.5em; /* Tamaño de fuente más grande para la cuenta regresiva */
 }
 
+/* Sección individual dentro de la cuenta regresiva */
 .countdown-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
+    display: flex; /* Flexbox para alinear los elementos en columna */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    margin: 0 10px; /* Margen lateral para separar las secciones */
 }
 
+/* Estilos para los números y textos de la cuenta regresiva */
 .countdown-section span {
-    display: block;
-    color: #00ff00;
-    font-weight: bold;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
+    display: block; /* Hace que cada número/etiqueta sea un bloque */
+    color: #00ff00; /* Color verde brillante para los números */
+    font-weight: bold; /* Negrita para destacar los números */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Efecto de sombra neón verde */
+    padding: 10px; /* Espacio interno para los números */
+    background: #333; /* Fondo oscuro para resaltar los números */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Etiquetas de tiempo en la cuenta regresiva */
 .label {
-    margin-top: 5px;
-    color: #fff;
+    margin-top: 5px; /* Margen superior para separar del número */
+    color: #fff; /* Texto blanco para las etiquetas */
 }
 
+/* Estilos para ofertas y precios */
 .offer, .price {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; /* Centra el texto dentro de estas secciones */
+    margin: 20px 0; /* Margen superior e inferior */
 }
 
+/* Estilo específico para la oferta */
 .offer {
-    color: #ffff00;
-    font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+    color: #ffff00; /* Color amarillo para destacar ofertas */
+    font-size: 1.5em; /* Tamaño de fuente grande para las ofertas */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de neón rojo menos intenso */
 }
 
+/* Estilo específico para el precio */
 .price {
-    color: #ff0000;
-    font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+    color: #ff0000; /* Color rojo para destacar los precios */
+    font-size: 1.5em; /* Tamaño de fuente grande para los precios */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de neón rojo menos intenso */
 }
 
+/* Botón de llamada a la acción (CTA) */
 .cta-button {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 30px;
-    background-color: #ffff00; /* Color amarillo */
-    color: #000; /* Texto negro para contraste */
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-shadow: 0 0 3px #000;
-    box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Menos difuminado en el botón */
-    transition: background 0.3s ease;
+    display: block; /* Hace que el botón ocupe el ancho completo disponible */
+    margin: 20px auto; /* Centra el botón y le da espacio superior e inferior */
+    padding: 15px 30px; /* Espacio interno del botón */
+    background-color: #ffff00; /* Fondo amarillo para el botón */
+    color: #000; /* Texto negro para mejor contraste */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar por encima */
+    text-shadow: 0 0 3px #000; /* Sombra leve para el texto del botón */
+    box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Sombra suave amarilla para el botón */
+    transition: background 0.3s ease; /* Transición suave al cambiar el fondo */
 }
 
+/* Efecto hover para el botón CTA */
 .cta-button:hover {
-    background-color: #e6e600; /* Amarillo más oscuro al pasar el cursor */
-    box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Menos difuminado en el hover */
+    background-color: #e6e600; /* Fondo más oscuro cuando el cursor está encima */
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Sombra más pronunciada al hacer hover */
 }
 
+/* Contenedor para el programa */
 .program {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
 }
 
+/* Estilos para los encabezados dentro de la sección del programa */
 .program h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.5em; /* Tamaño de fuente grande para los títulos */
+    margin-bottom: 10px; /* Espacio inferior para separar del contenido */
 }
-
+/* Estilos para listas dentro de la sección de programas */
 .program ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    list-style-type: disc; /* Aplica viñetas en forma de disco */
+    margin-left: 20px; /* Margen izquierdo para la lista */
 }
 
+/* Estilos para el pie de página */
 footer {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Centra el contenido del pie de página */
+    margin-top: 20px; /* Espacio superior para separar del contenido anterior */
 }
 
+/* Estilos para los enlaces dentro del pie de página */
 footer a {
-    color: #000000; /* Colo de aviso legal */
-    text-decoration: none;
+    color: #000000; /* Color negro para los enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
 }
 
+/* Estilos para los enlaces al pasar el cursor */
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subraya el texto al pasar el cursor */
 }
 
-/* Responsive Styles */
+/* Estilos responsivos para pantallas con ancho máximo de 768px */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2em; /* Reduce el tamaño de la fuente del título */
     }
     
     .cta-button {
-        padding: 10px 20px;
-        font-size: 1em;
+        padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+        font-size: 1em; /* Reduce el tamaño de la fuente del botón */
     }
     
     .offer, .price {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Reduce el tamaño de la fuente para ofertas y precios */
     }
     
     .highlight {
-        padding: 15px;
+        padding: 15px; /* Ajusta el espaciado interno del contenedor resaltado */
     }
 }
 
+/* Estilos responsivos para pantallas con ancho máximo de 480px */
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Reduce aún más el tamaño de la fuente del título */
     }
     
     .cta-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
+        padding: 8px 15px; /* Ajusta aún más el espaciado interno del botón */
+        font-size: 0.9em; /* Reduce aún más el tamaño de la fuente del botón */
     }
     
     .offer, .price {
-        font-size: 1em;
+        font-size: 1em; /* Reduce aún más el tamaño de la fuente para ofertas y precios */
     }
     
     .highlight {
-        padding: 10px;
+        padding: 10px; /* Ajusta el espaciado interno del contenedor resaltado */
     }
     
     .countdown {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Ajusta el tamaño de la fuente de la cuenta regresiva */
     }
 }
 
+/* Estilos para el contenedor de información */
 .info-container {
     background-color: #1a1a1a; /* Fondo oscuro para contraste */
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Margen superior e inferior */
+    padding: 20px; /* Espaciado interno del contenedor */
+    margin: 20px 0; /* Espacio superior e inferior */
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    max-width: 90%; /* Tamaño máximo del contenedor */
-    margin: 20px auto; /* Centramos el contenedor y añadimos margen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar el contenedor */
+    max-width: 90%; /* Limita el ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor en la página */
 }
 
+/* Estilos para los encabezados dentro del contenedor de información */
 .info-container h2 {
-    font-size: 1.5em; /* Tamaño del texto de encabezado */
-    color: #fff; /* Color del texto */
-    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 1.5em; /* Tamaño del texto para los encabezados */
+    color: #fff; /* Color blanco para el texto */
+    margin-bottom: 10px; /* Espaciado inferior para separar del contenido siguiente */
 }
 
+/* Estilos para los párrafos dentro del contenedor de información */
 .info-container p {
-    font-size: 1.2em; /* Tamaño del texto del párrafo */
-    color: #ccc; /* Color del texto */
+    font-size: 1.2em; /* Tamaño del texto para los párrafos */
+    color: #ccc; /* Color gris claro para el texto */
     line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin-bottom: 10px; /* Espaciado inferior */
+    margin-bottom: 10px; /* Espaciado inferior para separar del contenido siguiente */
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para el contenedor de información en pantallas con ancho máximo de 768px */
 @media screen and (max-width: 768px) {
     .info-container h2 {
-        font-size: 1.2em; /* Tamaño del texto en pantallas más pequeñas */
+        font-size: 1.2em; /* Ajusta el tamaño del texto de los encabezados */
     }
 
     .info-container p {
-        font-size: 1em; /* Tamaño del texto en pantallas más pequeñas */
+        font-size: 1em; /* Ajusta el tamaño del texto de los párrafos */
     }
 }
 
-/*reduce la intensidad del efecto neon del temporizador*/
+/* Estilos para los números y textos de la cuenta regresiva con menor intensidad del efecto neón */
 .countdown-section span {
-    display: block;
-    color: #00ff00;
-    font-weight: bold;
-    text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00; /* Menos intensidad en el efecto neón */
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
+    display: block; /* Hace que cada número/etiqueta sea un bloque */
+    color: #00ff00; /* Color verde brillante para los números */
+    font-weight: bold; /* Negrita para destacar los números */
+    text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00; /* Menor intensidad del efecto neón */
+    padding: 10px; /* Espacio interno para los números */
+    background: #333; /* Fondo oscuro para resaltar los números */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-
-/* Ajusta la separación entre líneas */
+/* Estilos para el contenedor de información */
 .info-container {
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco del contenedor */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
                 0 0 20px rgba(255, 0, 0, 0.7); /* Sombra de neón roja más intensa */
-    border: 2px solid rgba(255, 0, 0, 0.5); /* Borde sutil pero más visible rojo */
-    display: flex;
-    align-items: center; /* Alinea verticalmente */
+    border: 2px solid rgba(255, 0, 0, 0.5); /* Borde sutil pero visible en rojo */
+    display: flex; /* Utiliza un diseño flexbox */
+    align-items: center; /* Alinea verticalmente el contenido */
     gap: 20px; /* Espacio entre el texto y la imagen */
 }
 
+/* Estilos para la sección de texto dentro del contenedor de información */
 .info-container .text-content {
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    flex: 1; /* Permite que el texto ocupe el espacio restante disponible */
 }
 
+/* Estilos para los encabezados dentro de la sección de texto */
 .info-container .text-content h2 {
-    font-size: 1.5em;
-    color: #000000; /* Texto negro */
-    margin-bottom: 15px;
+    font-size: 1.5em; /* Tamaño del texto del encabezado */
+    color: #000000; /* Color negro para el texto */
+    margin-bottom: 15px; /* Espaciado inferior para separar del contenido siguiente */
 }
 
+/* Estilos para los párrafos dentro de la sección de texto */
 .info-container .text-content p {
-    color: #000000; /* Texto negro */
-    margin: 15px 0;
+    color: #000000; /* Color negro para el texto */
+    margin: 15px 0; /* Margen superior e inferior para separar del contenido */
     line-height: 1.8; /* Ajusta la separación entre líneas */
     font-weight: bold; /* Texto en negrita */
 }
 
+/* Estilos para las listas dentro de la sección de texto */
 .info-container .text-content ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
+    list-style-type: disc; /* Aplica viñetas en forma de disco */
+    margin-left: 20px; /* Margen izquierdo para la lista */
+    padding-left: 20px; /* Espaciado interno izquierdo para la lista */
 }
 
+/* Estilos para los elementos de la lista dentro de la sección de texto */
 .info-container .text-content li {
-    color: #000000; /* Texto negro */
-    margin: 15px 0;
+    color: #000000; /* Color negro para el texto */
+    margin: 15px 0; /* Margen superior e inferior para separar del contenido */
     line-height: 1.8; /* Ajusta la separación entre líneas */
     font-weight: bold; /* Texto en negrita */
 }
 
+/* Estilos para las imágenes dentro del contenedor de información */
 .info-container img {
-    max-width: 200px; /* Tamaño máximo de la imagen aumentado */
+    max-width: 200px; /* Tamaño máximo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Esquinas redondeadas de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
 }
 
-
-/*estilos para la secsion de opiniones*/
-
+/* Estilos para la sección de opiniones */
 .opinions {
-    text-align: center;
-    padding: 20px;
+    text-align: center; /* Centra el contenido de la sección de opiniones */
+    padding: 20px; /* Espaciado interno */
 }
 
+/* Estilos para la galería de opiniones */
 .opinions-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: flex; /* Utiliza un diseño flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 10px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
 }
 
+/* Estilos para las imágenes en la galería de opiniones */
 .opinion-img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
+    width: 100px; /* Ancho fijo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.2s; /* Transición suave para el efecto de escala */
 }
 
+/* Estilos para las imágenes en la galería al pasar el cursor */
 .opinion-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Escala la imagen ligeramente al pasar el cursor */
 }
 
+/* Estilos para el modal de opiniones */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Posiciona el modal de manera fija */
+    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
 }
 
+/* Estilos para el contenido dentro del modal */
 .modal-content {
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    text-align: center;
+    position: relative; /* Posiciona el contenido de manera relativa */
+    margin: 10% auto; /* Centra el modal verticalmente y horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    text-align: center; /* Centra el texto dentro del modal */
 }
 
+/* Estilos para las imágenes dentro del contenido del modal */
 .modal-content img {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 100%; /* Ancho completo para las imágenes dentro del modal */
+    margin-bottom: 10px; /* Espaciado inferior para separar de otros elementos */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
+    position: absolute; /* Posiciona el botón de cierre de manera absoluta */
+    top: 10px; /* Espaciado superior desde el borde del modal */
+    right: 20px; /* Espaciado derecho desde el borde del modal */
+    font-size: 30px; /* Tamaño de la fuente para el botón de cierre */
+    font-weight: bold; /* Negrita para el texto del botón de cierre */
+    color: #000; /* Color negro para el texto del botón de cierre */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
 }
 
+/* Estilos para el botón de cierre al pasar el cursor */
 .close:hover {
-    color: red;
+    color: red; /* Cambia el color a rojo al pasar el cursor */
 }
-
-
-/*ESTILOS CON EFECTO 3D DE LA VENTANA EMERGENTE*/
-
+/* Estilos para la sección de opiniones */
 .opinions {
-    text-align: center;
-    padding: 20px;
+    text-align: center; /* Centra el texto en la sección de opiniones */
+    padding: 20px; /* Espaciado interno de la sección */
 }
 
+/* Estilos para la galería de opiniones */
 .opinions-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: flex; /* Utiliza un diseño flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 10px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
 }
 
+/* Estilos para las imágenes de opiniones */
 .opinion-img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; /* Borde redondeado */
+    width: 100px; /* Ancho fijo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transformaciones y sombra */
+    border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
 }
 
+/* Estilos para las imágenes al pasar el cursor */
 .opinion-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda al pasar el mouse */
+    transform: scale(1.1); /* Escala la imagen ligeramente al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda */
 }
 
+/* Estilos para el modal (ventana emergente) */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Posiciona el modal de manera fija en la pantalla */
+    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
 }
 
+/* Estilos para el contenido del modal */
 .modal-content {
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 15px; /* Bordes redondeados para la ventana emergente */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D para la ventana emergente */
+    position: relative; /* Posiciona el contenido de manera relativa */
+    margin: 10% auto; /* Centra el modal verticalmente y horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D para el modal */
 }
 
+/* Estilos para las imágenes dentro del contenido del modal */
 .modal-content img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px; /* Borde redondeado para la imagen dentro del modal */
+    width: 100%; /* Ancho completo de la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    cursor: pointer;
-    transition: color 0.3s ease;
+    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del modal */
+    top: 10px; /* Espaciado superior desde el borde del modal */
+    right: 20px; /* Espaciado derecho desde el borde del modal */
+    font-size: 30px; /* Tamaño de la fuente para el botón de cierre */
+    font-weight: bold; /* Negrita para el texto del botón de cierre */
+    color: #000; /* Color negro para el texto del botón de cierre */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
+/* Estilos para el botón de cierre al pasar el cursor */
 .close:hover {
-    color: red;
+    color: red; /* Cambia el color a rojo al pasar el cursor */
 }
 
+/* Estilos para el texto destacado */
 .highlighted-text {
-   
-    font-size: 2em;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+    font-size: 2em; /* Tamaño de fuente aumentado */
+    color: #fff; /* Color blanco */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de sombra de texto con menor intensidad en el efecto neón */
 }
 
-
-
-/* Estilos para el logo fuera del contenedor */
-/*.site-header {
-    position: relative;
-}*/
-/*
-.logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 190px; /* Ajusta el tamaño del logo según sea necesario */
-   /* height: auto; /* Mantiene la proporción del logo */
-    /*image-rendering: -webkit-optimize-contrast;*/ /* Para mejorar la nitidez en algunos navegadores */
-/*}*/
-
-
-
+/* Estilos para el contador de compras */
 .purchase-counter {
-    text-align: center;
-    margin: 40px 0;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
+    text-align: center; /* Centra el texto en la sección del contador */
+    margin: 40px 0; /* Margen superior e inferior */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Estilos para el título en el contador de compras */
 .purchase-counter h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 24px; /* Tamaño del texto del título */
+    color: #333; /* Color gris oscuro */
+    margin-bottom: 20px; /* Espaciado inferior para separar del contador */
 }
 
+/* Estilos para el contador en el contador de compras */
 .counter {
-    font-size: 48px;
-    color: #ff4500;
-    font-weight: bold;
+    font-size: 48px; /* Tamaño del texto del contador */
+    color: #ff4500; /* Color naranja */
+    font-weight: bold; /* Negrita para el texto del contador */
 }
-
-
 
 /* Contenedor del contador con efecto neón morado */
 .purchase-counter {
-    text-align: center;
-    margin: 50px 0;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #ff0076, 0 0 10px #ff0076, 0 0 10px #ff0076;
-    border: 2px solid rgba(128, 0, 128, 0.7);
+    text-align: center; /* Centra el texto en el contador */
+    margin: 50px 0; /* Margen superior e inferior */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px #ff0076, 0 0 10px #ff0076, 0 0 10px #ff0076; /* Sombra de neón morado */
+    border: 2px solid rgba(128, 0, 128, 0.7); /* Borde morado sutil */
 }
 
-/* Título con efecto 3D */
+/* Título con efecto 3D en el contador de compras */
 .purchase-counter h2 {
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #c2bdbd, -2px -2px 4px rgba(255, 255, 255, 0.2);
+    font-size: 24px; /* Tamaño del texto del título */
+    color: #000000; /* Color negro */
+    margin-bottom: 20px; /* Espaciado inferior para separar del contador */
+    text-shadow: 2px 2px 4px #c2bdbd, -2px -2px 4px rgba(255, 255, 255, 0.2); /* Efecto de sombra 3D */
 }
 
 /* Contador con efecto 3D */
 .counter {
-    font-size: 48px;
-    color: #6b065a;
-    font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.2);
+    font-size: 48px; /* Tamaño del texto del contador */
+    color: #6b065a; /* Color morado oscuro */
+    font-weight: bold; /* Negrita para el texto del contador */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.2); /* Efecto de sombra 3D */
 }
 
-
+/* Estilos para el contenedor de video */
 .video-container video {
-    width: 100%;
-    height: auto;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-}
-
-
-/* Estilos para la sección del contador de compradores */
-.purchase-counter {
-    text-align: center;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-}
-
-.purchase-counter h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.counter {
-    font-size: 2em;
-    font-weight: bold;
-    color: #ff0000;
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    image-rendering: auto; /* Ajusta la calidad de la imagen */
+    image-rendering: crisp-edges; /* Mejora la nitidez de los bordes */
+    image-rendering: pixelated; /* Efecto pixelado para una apariencia retro */
 }
 
 
@@ -549,241 +554,345 @@ footer a:hover {
 
 /*/////////////////////////////////////*/
 
-/* Contenedor principal del carrusel */
+/* Estilos para el contenedor principal del carrusel */
 .carousel {
-    position: relative;
-    max-width: 940px;  /* Ancho fijo de 940px */
-    height: 595px;  /* Altura fija de 595px */
-    overflow: hidden;  /* Oculta cualquier contenido que exceda las dimensiones */
-    margin: 0 auto;  /* Centra el carrusel en la página */
+    position: relative; /* Permite la posición absoluta de los botones de navegación */
+    max-width: 940px; /* Ancho máximo fijo del carrusel */
+    height: 595px; /* Altura fija del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde fuera de los límites del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente en la página */
 }
 
-/* Contenedor interno para las imágenes */
+/* Estilos para el contenedor interno de las imágenes del carrusel */
 .carousel-inner {
-    display: flex;  /* Coloca las imágenes en fila */
-    transition: transform 0.5s ease-in-out;  /* Transición suave para los movimientos */
+    display: flex; /* Usa flexbox para alinear las imágenes en fila */
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición de desplazamiento de las imágenes */
 }
 
-/* Estilo para las imágenes del carrusel */
+/* Estilos para las imágenes dentro del carrusel */
 .carousel-inner img {
-    width: 100%;  /* Asegura que la imagen ocupe todo el ancho del carrusel */
-    height: 100%;  /* Asegura que la imagen ocupe toda la altura del carrusel */
-    object-fit: cover;  /* Ajusta la imagen para cubrir completamente el contenedor sin distorsión */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del carrusel */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del carrusel */
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin distorsión */
 }
 
-
-/* Botones de navegación */
+/* Estilos para los botones de navegación del carrusel */
 .carousel-button {
-    position: absolute;
-    top: 50%;  /* Centra verticalmente */
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
+    position: absolute; /* Posiciona los botones en relación con el contenedor del carrusel */
+    top: 50%; /* Centra verticalmente en el medio del carrusel */
+    transform: translateY(-50%); /* Ajusta la posición vertical del botón */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+    color: white; /* Color del texto de los botones */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño del texto en el botón */
+    transition: background-color 0.3s; /* Suaviza la transición del color de fondo al pasar el cursor */
 }
 
+/* Estilos para los botones de navegación al pasar el cursor */
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);  /* Más oscuro al pasar el mouse */
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia a un fondo más oscuro al pasar el cursor */
 }
 
-/* Botón de retroceso */
+/* Estilos específicos para el botón de retroceso */
 .carousel-button.prev {
-    left: 10px;  /* A la izquierda */
+    left: 10px; /* Posiciona el botón de retroceso a la izquierda */
 }
 
-/* Botón de avance */
+/* Estilos específicos para el botón de avance */
 .carousel-button.next {
-    right: 10px;  /* A la derecha */
+    right: 10px; /* Posiciona el botón de avance a la derecha */
 }
 
-
-
-/*estilos de la ventana del anuncio del codigo de promocion*/
-
+/* Estilos para el modal de promoción de código */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Posiciona el modal de manera fija en la pantalla */
+    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
+    left: 0; /* Posiciona el modal en el borde izquierdo de la pantalla */
+    top: 0; /* Posiciona el modal en el borde superior de la pantalla */
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
 }
 
+/* Estilos para el contenido del modal */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
+    background-color: #fefefe; /* Fondo blanco para el contenido del modal */
+    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #888; /* Borde gris claro alrededor del modal */
+    width: 80%; /* Ancho del modal */
+    max-width: 400px; /* Ancho máximo del modal */
+    text-align: center; /* Centra el texto dentro del modal */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Color gris claro para el botón de cierre */
+    float: right; /* Posiciona el botón de cierre a la derecha */
+    font-size: 28px; /* Tamaño del texto del botón de cierre */
+    font-weight: bold; /* Negrita para el texto del botón de cierre */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Cambia el color del botón de cierre al negro al pasar el cursor o al enfocar */
+    text-decoration: none; /* Elimina cualquier subrayado */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
 }
 
-
+/* Estilos para el modal */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en una posición específica en la pantalla */
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+    left: 0; /* Posiciona el modal en el borde izquierdo de la pantalla */
+    top: 0; /* Posiciona el modal en el borde superior de la pantalla */
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad para el modal */
 }
 
+/* Estilos para el contenido del modal */
 .modal-content {
-    background-color: rgb(255, 255, 255); /* Fondo del modal */
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    color: black; /* Color del texto */
-    font-size: 24px; /* Aumenta el tamaño del texto */
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255); /* Fondo blanco para el contenido del modal */
+    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+    padding: 20px; /* Espaciado interno del contenido */
+    border: 1px solid #888; /* Borde gris alrededor del modal */
+    width: 80%; /* Ancho del modal */
+    max-width: 400px; /* Ancho máximo del modal */
+    text-align: center; /* Centra el texto dentro del modal */
+    color: black; /* Color del texto dentro del modal */
+    font-size: 24px; /* Tamaño del texto en el modal */
+    border-radius: 10px; /* Bordes redondeados del modal */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 0, 0.7); /* Efecto neón leve */
-    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto 3D */
+    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto 3D en el texto */
 }
 
+/* Estilos para el código promocional dentro del modal */
 .promo-code {
-    color: red; /* Color rojo para la palabra (samba) */
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); /* Efecto de sombra roja */
+    color: red; /* Color rojo para destacar el código promocional */
+    font-weight: bold; /* Texto en negrita para mayor visibilidad */
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); /* Efecto de sombra roja para el código */
 }
 
+/* Estilos para el botón de cierre del modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+    color: #aaa; /* Color gris claro para el botón de cierre por defecto */
+    float: right; /* Posiciona el botón de cierre a la derecha */
+    font-size: 28px; /* Tamaño grande del texto para el botón de cierre */
+    font-weight: bold; /* Texto en negrita para el botón de cierre */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-/* Estilo para el precio destacado */
+/* Estilos para el precio destacado */
 .price {
-    color: #ff5722; /* Color vivo naranja-rojizo */
-    font-size: 28px; /* Tamaño del texto mayor */
-    font-weight: bold; /* Texto en negrita */
-    background-color: #fff; /* Fondo blanco para contraste */
-    padding: 10px 20px; /* Espaciado interno reducido */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Efecto de sombra */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Efecto de sombra en el texto */
-    animation: pulse 1.5s infinite; /* Aplicación de la animación */
-    max-width: 600px; /* Ancho máximo del elemento */
-    margin: 0 auto; /* Centrar el elemento horizontalmente */
-    text-align: center; /* Centrar el texto dentro del elemento */
-    display: inline-block; /* Ajustar el ancho al contenido */
+    color: #ff5722; /* Color naranja-rojizo vivo para el precio */
+    font-size: 28px; /* Tamaño grande del texto para el precio */
+    font-weight: bold; /* Texto en negrita para el precio */
+    background-color: #fff; /* Fondo blanco para crear contraste */
+    padding: 10px 20px; /* Espaciado interno reducido para el precio */
+    border-radius: 5px; /* Bordes redondeados para el elemento del precio */
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Efecto de sombra alrededor del precio */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Efecto de sombra en el texto del precio */
+    animation: pulse 1.5s infinite; /* Animación de pulso que se repite infinitamente */
+    max-width: 600px; /* Ancho máximo del elemento del precio */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+    text-align: center; /* Centra el texto dentro del elemento del precio */
+    display: inline-block; /* Ajusta el ancho del elemento al contenido */
 }
 
 /* Definición de la animación de pulso */
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Tamaño normal */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal */
+        transform: scale(1); /* Tamaño normal al inicio de la animación */
+        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal al inicio */
     }
     50% {
-        transform: scale(1.1); /* Aumento del tamaño */
+        transform: scale(1.1); /* Aumento del tamaño del elemento */
         box-shadow: 0 0 20px rgba(255, 87, 34, 1); /* Sombra más pronunciada */
     }
     100% {
-        transform: scale(1); /* Tamaño normal */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal */
+        transform: scale(1); /* Tamaño normal al final de la animación */
+        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal al final */
+    }
+}
+
+/* Estilo para la cantidad destacada */
+.highlight-amount {
+    color: #ff0000; /* Color rojo vivo para destacar la cantidad */
+    font-weight: bold; /* Texto en negrita para la cantidad destacada */
+    font-size: 28px; /* Tamaño grande del texto para la cantidad */
+}
+
+/* Estilos para el logo fuera del contenedor */
+.site-header {
+    position: relative; /* Establece el contenedor del logo en una posición relativa */
+}
+
+.logo {
+    position: absolute; /* Posiciona el logo en una posición absoluta dentro de .site-header */
+    top: 8px; /* Ajusta el logo hacia arriba desde el borde superior del contenedor */
+    left: 10px; /* Alinea el logo a la izquierda del contenedor */
+    width: 190px; /* Establece un ancho fijo para el logo */
+    height: auto; /* Mantiene la proporción del logo automáticamente */
+    image-rendering: -webkit-optimize-contrast; /* Mejora la nitidez en navegadores Webkit */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .logo {
+        width: 150px; /* Reduce el ancho del logo en dispositivos móviles */
+        top: 5px; /* Ajusta la posición vertical del logo */
+        left: 5px; /* Ajusta la posición horizontal del logo */
+    }
+}
+
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed; /* Fija el botón en una posición específica en la pantalla */
+    bottom: 20px; /* Posiciona el botón a 20px desde el borde inferior */
+    right: 20px; /* Posiciona el botón a 20px desde el borde derecho */
+    z-index: 1000; /* Asegura que el botón esté siempre visible sobre otros elementos */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 60px; /* Establece el ancho del botón */
+    height: 60px; /* Establece la altura del botón */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Añade una sombra suave más acorde con el tamaño del botón */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de transformación */
+}
+
+/* Ajuste de la sombra del botón al pasar el cursor */
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el cursor */
+}
+
+/* Estilos para el anuncio en la parte superior */
+.top-banner {
+    position: fixed; /* Fija el banner en la parte superior de la pantalla */
+    top: 0; /* Posiciona el banner en el borde superior */
+    left: 0; /* Posiciona el banner en el borde izquierdo */
+    width: 100%; /* Ancho completo de la pantalla */
+    background-color: #b9049b; /* Color de fondo rojo para el banner */
+    color: #ffffff; /* Color blanco para el texto del banner */
+    text-align: center; /* Centra el texto dentro del banner */
+    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
+    font-size: 16px; /* Tamaño de fuente para el texto del banner */
+    font-weight: bold; /* Texto en negrita para mayor visibilidad */
+    z-index: 1000; /* Asegura que el banner esté siempre al frente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera para dar un efecto de relieve */
+}
+
+/* Estilos para el texto destacado */
+.highlight {
+    margin-top: -10px; /* Reduce el margen superior para ajustar la posición del texto */
+    position: relative; /* Permite ajustes precisos adicionales si es necesario */
+    top: -12px; /* Eleva el texto ligeramente */
+}
+
+/* Ajustes para pantallas pequeñas (máx. 768px) */
+@media (max-width: 768px) {
+    .highlight {
+        margin-top: -5px; /* Reduce el margen superior para pantallas móviles */
+        top: -280px; /* Ajusta la posición del texto en pantallas más pequeñas */
     }
 }
 
 
 
-/* Estilo para la cantidad destacada $194,000 */
-.highlight-amount {
-    color: #ff0000; /* Rojo vivo */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 28px; /* Tamaño del texto para destacarlo */
+/*/////////////////////////////////////////////////////////////////////*/
+
+/* Estilo base para las estrellas de calificación */
+.rating {
+    display: flex; /* Dispone las estrellas en una fila */
+    direction: row; /* Dirección de las estrellas de izquierda a derecha */
+    font-size: 2em; /* Tamaño de las estrellas */
+    color: #ccc; /* Color para las estrellas inactivas */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
 }
 
-
-/* Estilos para el logo fuera del contenedor */
-.site-header {
-    position: relative;
+.rating .star {
+    transition: color 0.2s; /* Transición suave para el cambio de color */
 }
 
-.logo {
-    position: absolute;
-    top: 8px; /* Ajusta el valor para mover el logo más arriba */
-    left: 10px; /* Mantiene el logo alineado a la izquierda */
-    width: 190px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    image-rendering: -webkit-optimize-contrast; /* Para mejorar la nitidez en algunos navegadores */
+/* Estilo para estrellas activas o en hover */
+.rating .star.active,
+.rating .star:hover,
+.rating .star.hover {
+    color: #ffcc00; /* Color dorado para estrellas activas o en hover */
 }
 
-
-/*codigo para el boton de whatsapp*/
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Para que el botón esté siempre visible */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(255, 253, 253, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-}
-
-
-/*anuncio en la parte superior*/
-.top-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #b9049b; /* Color de fondo rojo */
-    color: #ffffff; /* Texto blanco */
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1000; /* Asegura que esté siempre al frente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar un poco de relieve */
-}
-
-
-.highlight-amount-red {
-    color: rgb(251, 255, 0);
-}
-
+/* Media query para pantallas de hasta 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .site-header {
+        /* Ajusta el diseño del encabezado para pantallas más pequeñas */
+        padding: 10px; /* Añade espaciado interno */
+    }
     
+    .carousel {
+        width: 100%; /* Ancho completo del carrusel en pantallas pequeñas */
+        height: auto; /* Ajusta la altura del carrusel según el contenido */
+    }
+    
+    .carousel-inner img {
+        height: auto; /* Ajusta la altura de las imágenes del carrusel */
+    }
+    
+    .whatsapp-button {
+        width: 50px; /* Ancho del botón de WhatsApp en pantallas pequeñas */
+        height: 50px; /* Altura del botón de WhatsApp en pantallas pequeñas */
+        bottom: 10px; /* Posición desde el borde inferior */
+        right: 10px; /* Posición desde el borde derecho */
+    }
+    
+    .top-banner {
+        font-size: 14px; /* Tamaño de fuente más pequeño para el banner */
+        padding: 8px 0; /* Espaciado interno reducido */
+    }
+    
+    .modal-content {
+        width: 90%; /* Ancho del contenido del modal en pantallas pequeñas */
+        max-width: none; /* Elimina el ancho máximo */
+        font-size: 18px; /* Tamaño de fuente más grande para el contenido del modal */
+    }
+}
+
+/* Optimiza el tamaño de las imágenes en pantallas pequeñas */
+.carousel-inner img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Ajusta el tamaño de las fuentes para pantallas pequeñas */
+body {
+    font-size: 16px; /* Tamaño base de la fuente */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas móviles */
+    }
+    
+    .price {
+        font-size: 24px; /* Tamaño de fuente para el precio en pantallas pequeñas */
+    }
+}
+
+/* Botones más grandes y espaciados en dispositivos móviles */
+button, .whatsapp-button {
+    padding: 15px 25px; /* Espaciado interno de los botones */
+    font-size: 18px; /* Tamaño de fuente para los botones */
+}
+
+@media (max-width: 768px) {
+    button, .whatsapp-button {
+        padding: 10px 20px; /* Espaciado interno reducido en pantallas pequeñas */
+        font-size: 16px; /* Tamaño de fuente más pequeño para los botones */
+    }
+}
