@@ -14,7 +14,7 @@ body {
 /* Contenedor principal */
 .container {
     max-width: 800px; /* Define el ancho máximo del contenedor */
-    margin: 105px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
+    margin: 110px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
     padding: 20px; /* Espaciado interno dentro del contenedor */
     background-color: #25002d; /* Color de fondo del contenedor */
     color: #fff; /* Color del texto dentro del contenedor */
