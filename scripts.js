@@ -63,3 +63,47 @@ document.addEventListener('DOMContentLoaded', () => {
 function closePromoModal() {
     document.getElementById('promoModal').style.display = 'none';
 }
+
+
+
+// Seleccionar todas las estrellas
+const stars = document.querySelectorAll('.star');
+const ratingValue = document.getElementById('rating-value');
+
+// Función para actualizar la calificación
+function updateRating(value) {
+    localStorage.setItem('rating', value); // Guardar en Local Storage
+    ratingValue.textContent = value;
+    stars.forEach(star => {
+        star.classList.toggle('active', parseInt(star.dataset.value) <= value);
+    });
+}
+
+// Cargar la calificación desde Local Storage al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const storedRating = localStorage.getItem('rating');
+    if (storedRating) {
+        updateRating(parseInt(storedRating));
+    }
+});
+
+// Agregar eventos de hover y click a las estrellas
+stars.forEach(star => {
+    star.addEventListener('mouseover', () => {
+        const value = parseInt(star.dataset.value);
+        stars.forEach(star => {
+            star.classList.toggle('hover', parseInt(star.dataset.value) <= value);
+        });
+    });
+
+    star.addEventListener('mouseout', () => {
+        stars.forEach(star => {
+            star.classList.remove('hover');
+        });
+    });
+
+    star.addEventListener('click', () => {
+        updateRating(parseInt(star.dataset.value));
+    });
+});
+
