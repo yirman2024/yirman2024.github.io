@@ -6,8 +6,8 @@ const countdownElement = {
     seconds: document.getElementById('seconds')
 };
 
-// Tiempo inicial en milisegundos (5 horas y 25 minutos)
-const initialTime = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);
+// Tiempo inicial en milisegundos (9 horas y 25 minutos)
+const initialTime = (9 * 60 * 60 * 1000) + (24 * 60 * 1000);
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -66,6 +66,8 @@ function closePromoModal() {
 
 
 
+
+
 // Seleccionar todas las estrellas
 const stars = document.querySelectorAll('.star');
 const ratingValue = document.getElementById('rating-value');
@@ -106,4 +108,3 @@ stars.forEach(star => {
         updateRating(parseInt(star.dataset.value));
     });
 });
-
