@@ -13,7 +13,7 @@ body {
 
 /* Contenedor principal */
 .container {
-    max-width: 800px; /* Define el ancho máximo del contenedor */
+    max-width: 850px; /* Define el ancho máximo del contenedor */
     margin: 130px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
     padding: 20px; /* Espaciado interno dentro del contenedor */
     background-color: #25002d; /* Color de fondo del contenedor */
@@ -72,7 +72,6 @@ video {
     font-weight: bold; /* Negrita para resaltar el texto */
 }
 
-
 /* Contenedor principal para la cuenta regresiva */
 .countdown {
     display: flex; /* Utiliza flexbox para alinear elementos en línea */
@@ -125,6 +124,7 @@ video {
     font-size: 1.5em; /* Tamaño de fuente grande para los precios */
     text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de neón rojo menos intenso */
 }
+
 
 /* Botón de llamada a la acción (CTA) */
 .cta-button {
@@ -356,8 +356,7 @@ footer a:hover {
 .opinion-img:hover {
     transform: scale(1.1); /* Escala la imagen ligeramente al pasar el cursor */
 }
-
-/* Estilos para el modal de opiniones */
+/* Estilos generales para el modal */
 .modal {
     display: none; /* Oculta el modal por defecto */
     position: fixed; /* Posiciona el modal de manera fija */
@@ -378,13 +377,16 @@ footer a:hover {
     width: 80%; /* Ancho del modal */
     max-width: 600px; /* Ancho máximo del modal */
     background-color: #fff; /* Fondo blanco para el contenido del modal */
+    border-radius: 15px; /* Bordes redondeados */
     text-align: center; /* Centra el texto dentro del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
 }
 
 /* Estilos para las imágenes dentro del contenido del modal */
 .modal-content img {
-    width: 100%; /* Ancho completo para las imágenes dentro del modal */
-    margin-bottom: 10px; /* Espaciado inferior para separar de otros elementos */
+    width: 100%; /* Ancho completo de la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 /* Estilos para el botón de cierre del modal */
@@ -396,12 +398,14 @@ footer a:hover {
     font-weight: bold; /* Negrita para el texto del botón de cierre */
     color: #000; /* Color negro para el texto del botón de cierre */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
 /* Estilos para el botón de cierre al pasar el cursor */
 .close:hover {
     color: red; /* Cambia el color a rojo al pasar el cursor */
 }
+
 /* Estilos para la sección de opiniones */
 .opinions {
     text-align: center; /* Centra el texto en la sección de opiniones */
@@ -421,100 +425,27 @@ footer a:hover {
     width: 100px; /* Ancho fijo para las imágenes */
     height: auto; /* Mantiene la proporción de la imagen */
     cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transformaciones y sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
 }
 
 /* Estilos para las imágenes al pasar el cursor */
 .opinion-img:hover {
-    transform: scale(1.1); /* Escala la imagen ligeramente al pasar el cursor */
+    transform: scale(1.1); /* Escala la imagen ligeramente */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda */
-}
-
-/* Estilos para el modal (ventana emergente) */
-.modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Posiciona el modal de manera fija en la pantalla */
-    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ancho completo de la pantalla */
-    height: 100%; /* Altura completa de la pantalla */
-    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
-}
-
-/* Estilos para el contenido del modal */
-.modal-content {
-    position: relative; /* Posiciona el contenido de manera relativa */
-    margin: 10% auto; /* Centra el modal verticalmente y horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    width: 80%; /* Ancho del modal */
-    max-width: 600px; /* Ancho máximo del modal */
-    background-color: #fff; /* Fondo blanco para el contenido del modal */
-    border-radius: 15px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto dentro del modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D para el modal */
-}
-
-/* Estilos para las imágenes dentro del contenido del modal */
-.modal-content img {
-    width: 100%; /* Ancho completo de la imagen */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Estilos para el botón de cierre del modal */
-.close {
-    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del modal */
-    top: 10px; /* Espaciado superior desde el borde del modal */
-    right: 20px; /* Espaciado derecho desde el borde del modal */
-    font-size: 30px; /* Tamaño de la fuente para el botón de cierre */
-    font-weight: bold; /* Negrita para el texto del botón de cierre */
-    color: #000; /* Color negro para el texto del botón de cierre */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
-    transition: color 0.3s ease; /* Transición suave para el cambio de color */
-}
-
-/* Estilos para el botón de cierre al pasar el cursor */
-.close:hover {
-    color: red; /* Cambia el color a rojo al pasar el cursor */
 }
 
 /* Estilos para el texto destacado */
 .highlighted-text {
     font-size: 2em; /* Tamaño de fuente aumentado */
     color: #fff; /* Color blanco */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de sombra de texto con menor intensidad en el efecto neón */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de sombra de texto */
 }
 
 /* Estilos para el contador de compras */
 .purchase-counter {
     text-align: center; /* Centra el texto en la sección del contador */
-    margin: 40px 0; /* Margen superior e inferior */
-    background-color: #f8f9fa; /* Fondo gris claro */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Estilos para el título en el contador de compras */
-.purchase-counter h2 {
-    font-size: 24px; /* Tamaño del texto del título */
-    color: #333; /* Color gris oscuro */
-    margin-bottom: 20px; /* Espaciado inferior para separar del contador */
-}
-
-/* Estilos para el contador en el contador de compras */
-.counter {
-    font-size: 48px; /* Tamaño del texto del contador */
-    color: #ff4500; /* Color naranja */
-    font-weight: bold; /* Negrita para el texto del contador */
-}
-
-/* Contenedor del contador con efecto neón morado */
-.purchase-counter {
-    text-align: center; /* Centra el texto en el contador */
     margin: 50px 0; /* Margen superior e inferior */
     padding: 8px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
@@ -548,47 +479,42 @@ footer a:hover {
     image-rendering: pixelated; /* Efecto pixelado para una apariencia retro */
 }
 
-
-
-
-
-/*/////////////////////////////////////*/
-
 /* Estilos para el contenedor principal del carrusel */
 .carousel {
     position: relative; /* Permite la posición absoluta de los botones de navegación */
     max-width: 940px; /* Ancho máximo fijo del carrusel */
     height: 595px; /* Altura fija del carrusel */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde fuera de los límites del carrusel */
-    margin: 0 auto; /* Centra el carrusel horizontalmente en la página */
+    overflow: hidden; /* Oculta contenido fuera de los límites */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
 }
 
 /* Estilos para el contenedor interno de las imágenes del carrusel */
 .carousel-inner {
-    display: flex; /* Usa flexbox para alinear las imágenes en fila */
-    transition: transform 0.5s ease-in-out; /* Suaviza la transición de desplazamiento de las imágenes */
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición de desplazamiento */
 }
 
 /* Estilos para las imágenes dentro del carrusel */
 .carousel-inner img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del carrusel */
-    height: 100%; /* Asegura que la imagen ocupe toda la altura del carrusel */
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin distorsión */
+    width: 100%; /* Ancho completo de la imagen */
+    height: 100%; /* Altura completa de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente */
 }
 
 /* Estilos para los botones de navegación del carrusel */
 .carousel-button {
-    position: absolute; /* Posiciona los botones en relación con el contenedor del carrusel */
-    top: 50%; /* Centra verticalmente en el medio del carrusel */
-    transform: translateY(-50%); /* Ajusta la posición vertical del botón */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
-    color: white; /* Color del texto de los botones */
-    border: none; /* Elimina el borde del botón */
-    padding: 10px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: 18px; /* Tamaño del texto en el botón */
-    transition: background-color 0.3s; /* Suaviza la transición del color de fondo al pasar el cursor */
+    position: absolute; /* Posiciona los botones en relación con el carrusel */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre */
+    font-size: 18px; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
 }
+
 
 /* Estilos para los botones de navegación al pasar el cursor */
 .carousel-button:hover {
@@ -650,250 +576,286 @@ footer a:hover {
     display: none; /* Oculta el modal por defecto */
     position: fixed; /* Fija el modal en una posición específica en la pantalla */
     z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
-    left: 0; /* Posiciona el modal en el borde izquierdo de la pantalla */
-    top: 0; /* Posiciona el modal en el borde superior de la pantalla */
-    width: 100%; /* Ancho completo de la pantalla */
-    height: 100%; /* Altura completa de la pantalla */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad para el modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
 }
-
 /* Estilos para el contenido del modal */
 .modal-content {
-    background-color: rgb(255, 255, 255); /* Fondo blanco para el contenido del modal */
-    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
-    padding: 20px; /* Espaciado interno del contenido */
-    border: 1px solid #888; /* Borde gris alrededor del modal */
-    width: 80%; /* Ancho del modal */
-    max-width: 400px; /* Ancho máximo del modal */
-    text-align: center; /* Centra el texto dentro del modal */
-    color: black; /* Color del texto dentro del modal */
-    font-size: 24px; /* Tamaño del texto en el modal */
-    border-radius: 10px; /* Bordes redondeados del modal */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 0, 0.7); /* Efecto neón leve */
-    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto 3D en el texto */
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 0, 0.7);
+    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Estilos para el código promocional dentro del modal */
 .promo-code {
-    color: red; /* Color rojo para destacar el código promocional */
-    font-weight: bold; /* Texto en negrita para mayor visibilidad */
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); /* Efecto de sombra roja para el código */
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
 }
 
 /* Estilos para el botón de cierre del modal */
 .close {
-    color: #aaa; /* Color gris claro para el botón de cierre por defecto */
-    float: right; /* Posiciona el botón de cierre a la derecha */
-    font-size: 28px; /* Tamaño grande del texto para el botón de cierre */
-    font-weight: bold; /* Texto en negrita para el botón de cierre */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Estilos para el precio destacado */
 .price {
-    color: #ff5722; /* Color naranja-rojizo vivo para el precio */
-    font-size: 28px; /* Tamaño grande del texto para el precio */
-    font-weight: bold; /* Texto en negrita para el precio */
-    background-color: #fff; /* Fondo blanco para crear contraste */
-    padding: 10px 20px; /* Espaciado interno reducido para el precio */
-    border-radius: 5px; /* Bordes redondeados para el elemento del precio */
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Efecto de sombra alrededor del precio */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Efecto de sombra en el texto del precio */
-    animation: pulse 1.5s infinite; /* Animación de pulso que se repite infinitamente */
-    max-width: 600px; /* Ancho máximo del elemento del precio */
-    margin: 0 auto; /* Centra el elemento horizontalmente */
-    text-align: center; /* Centra el texto dentro del elemento del precio */
-    display: inline-block; /* Ajusta el ancho del elemento al contenido */
+    color: #ff5722;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: pulse 1.5s infinite;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
 }
 
 /* Definición de la animación de pulso */
 @keyframes pulse {
-    0% {
-        transform: scale(1); /* Tamaño normal al inicio de la animación */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal al inicio */
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
     }
     50% {
-        transform: scale(1.1); /* Aumento del tamaño del elemento */
-        box-shadow: 0 0 20px rgba(255, 87, 34, 1); /* Sombra más pronunciada */
-    }
-    100% {
-        transform: scale(1); /* Tamaño normal al final de la animación */
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7); /* Sombra normal al final */
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 87, 34, 1);
     }
 }
 
 /* Estilo para la cantidad destacada */
 .highlight-amount {
-    color: #ff0000; /* Color rojo vivo para destacar la cantidad */
-    font-weight: bold; /* Texto en negrita para la cantidad destacada */
-    font-size: 28px; /* Tamaño grande del texto para la cantidad */
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 28px;
 }
 
-/* Estilos para el logo fuera del contenedor */
-.site-header {
-    position: relative; /* Establece el contenedor del logo en una posición relativa */
-}
-
+/* Estilos para el logo */
 .logo {
-    position: absolute; /* Posiciona el logo en una posición absoluta dentro de .site-header */
-    top: 8px; /* Ajusta el logo hacia arriba desde el borde superior del contenedor */
-    left: 10px; /* Alinea el logo a la izquierda del contenedor */
-    width: 190px; /* Establece un ancho fijo para el logo */
-    height: auto; /* Mantiene la proporción del logo automáticamente */
-    image-rendering: -webkit-optimize-contrast; /* Mejora la nitidez en navegadores Webkit */
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 190px;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .logo {
-        width: 150px; /* Reduce el ancho del logo en dispositivos móviles */
-        top: 5px; /* Ajusta la posición vertical del logo */
-        left: 5px; /* Ajusta la posición horizontal del logo */
+        width: 150px;
+        top: 5px;
+        left: 5px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: none;
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    button, .whatsapp-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .content-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .promo-text, .countdown, .price-highlight, .buy-now {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+    }
+    
+    .promo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .countdown {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .price-highlight {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .buy-now {
+        margin-top: 10px;
+        padding: 10px 20px;
     }
 }
 
-
 /* Estilos para el botón de WhatsApp */
 .whatsapp-button {
-    position: fixed; /* Fija el botón en una posición específica en la pantalla */
-    bottom: 20px; /* Posiciona el botón a 20px desde el borde inferior */
-    right: 20px; /* Posiciona el botón a 20px desde el borde derecho */
-    z-index: 1000; /* Asegura que el botón esté siempre visible sobre otros elementos */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 60px; /* Establece el ancho del botón */
-    height: 60px; /* Establece la altura del botón */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Añade una sombra suave más acorde con el tamaño del botón */
-    transition: transform 0.3s ease; /* Transición suave para el efecto de transformación */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-/* Ajuste de la sombra del botón al pasar el cursor */
 .whatsapp-button:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor */
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el cursor */
+    transform: scale(1.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilos para el anuncio en la parte superior */
 .top-banner {
-    position: fixed; /* Fija el banner en la parte superior de la pantalla */
-    top: 0; /* Posiciona el banner en el borde superior */
-    left: 0; /* Posiciona el banner en el borde izquierdo */
-    width: 100%; /* Ancho completo de la pantalla */
-    background-color: #b9049b; /* Color de fondo rojo para el banner */
-    color: #ffffff; /* Color blanco para el texto del banner */
-    text-align: center; /* Centra el texto dentro del banner */
-    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
-    font-size: 16px; /* Tamaño de fuente para el texto del banner */
-    font-weight: bold; /* Texto en negrita para mayor visibilidad */
-    z-index: 1000; /* Asegura que el banner esté siempre al frente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera para dar un efecto de relieve */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b9049b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para el texto destacado */
 .highlight {
-    margin-top: -10px; /* Reduce el margen superior para ajustar la posición del texto */
-    position: relative; /* Permite ajustes precisos adicionales si es necesario */
-    top: -12px; /* Eleva el texto ligeramente */
+    margin-top: -10px;
+    position: relative;
+    top: -12px;
 }
-
-/* Ajustes para pantallas pequeñas (máx. 768px) */
-@media (max-width: 768px) {
-    .highlight {
-        margin-top: -5px; /* Reduce el margen superior para pantallas móviles */
-        top: -280px; /* Ajusta la posición del texto en pantallas más pequeñas */
-    }
-}
-
-
-
-/*/////////////////////////////////////////////////////////////////////*/
 
 /* Estilo base para las estrellas de calificación */
 .rating {
-    display: flex; /* Dispone las estrellas en una fila */
-    direction: row; /* Dirección de las estrellas de izquierda a derecha */
-    font-size: 2em; /* Tamaño de las estrellas */
-    color: #ccc; /* Color para las estrellas inactivas */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+    display: flex;
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
 }
 
 .rating .star {
-    transition: color 0.2s; /* Transición suave para el cambio de color */
+    transition: color 0.2s;
 }
 
-/* Estilo para estrellas activas o en hover */
 .rating .star.active,
 .rating .star:hover,
 .rating .star.hover {
-    color: #ffcc00; /* Color dorado para estrellas activas o en hover */
-}
-
-/* Media query para pantallas de hasta 768px (tablets y móviles) */
-@media (max-width: 768px) {
-    .site-header {
-        /* Ajusta el diseño del encabezado para pantallas más pequeñas */
-        padding: 10px; /* Añade espaciado interno */
-    }
-    
-    .carousel {
-        width: 100%; /* Ancho completo del carrusel en pantallas pequeñas */
-        height: auto; /* Ajusta la altura del carrusel según el contenido */
-    }
-    
-    .carousel-inner img {
-        height: auto; /* Ajusta la altura de las imágenes del carrusel */
-    }
-    
-    .whatsapp-button {
-        width: 50px; /* Ancho del botón de WhatsApp en pantallas pequeñas */
-        height: 50px; /* Altura del botón de WhatsApp en pantallas pequeñas */
-        bottom: 10px; /* Posición desde el borde inferior */
-        right: 10px; /* Posición desde el borde derecho */
-    }
-    
-    .top-banner {
-        font-size: 14px; /* Tamaño de fuente más pequeño para el banner */
-        padding: 8px 0; /* Espaciado interno reducido */
-    }
-    
-    .modal-content {
-        width: 90%; /* Ancho del contenido del modal en pantallas pequeñas */
-        max-width: none; /* Elimina el ancho máximo */
-        font-size: 18px; /* Tamaño de fuente más grande para el contenido del modal */
-    }
+    color: #ffcc00;
 }
 
 /* Optimiza el tamaño de las imágenes en pantallas pequeñas */
 .carousel-inner img {
-    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Ajusta el tamaño de las fuentes para pantallas pequeñas */
 body {
-    font-size: 16px; /* Tamaño base de la fuente */
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas móviles */
-    }
-    
-    .price {
-        font-size: 24px; /* Tamaño de fuente para el precio en pantallas pequeñas */
-    }
+    font-size: 16px;
 }
 
 /* Botones más grandes y espaciados en dispositivos móviles */
 button, .whatsapp-button {
-    padding: 15px 25px; /* Espaciado interno de los botones */
-    font-size: 18px; /* Tamaño de fuente para los botones */
+    padding: 15px 25px;
+    font-size: 18px;
 }
 
-@media (max-width: 768px) {
-    button, .whatsapp-button {
-        padding: 10px 20px; /* Espaciado interno reducido en pantallas pequeñas */
-        font-size: 16px; /* Tamaño de fuente más pequeño para los botones */
-    }
+/* Contenedor principal del carrusel */
+.carousel {
+    position: relative;
+    max-width: 940px;
+    height: 595px;
+    overflow: hidden;
+    margin: 60px auto 0;
 }
 
+/* Contenedor adicional para el contenido específico */
+.content-container {
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content-container .timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.content-container .offer {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: #28a745;
+}
+
+.content-container .buy-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-container .buy-button:hover {
+    background-color: #0056b3;
+}
