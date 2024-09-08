@@ -1,12 +1,10 @@
-// purchaseCounter.js
-
 function initializeCounter() {
     const counterElement = document.getElementById('counter');
     let count = localStorage.getItem('purchaseCount');
 
-    // Reinicia el contador a cero si no hay un valor almacenado
+    // Si no hay un valor almacenado, inicializa a 100
     if (!count) {
-        count = 0; // Número inicial de personas que han adquirido el programa
+        count = 100; // Número inicial de personas que han adquirido el programa
         localStorage.setItem('purchaseCount', count);
     }
 
@@ -23,9 +21,16 @@ function incrementCounter() {
 }
 
 function startAutoIncrement() {
-    const fortyMinutes = 40 * 60 * 1000; // 40 minutos en milisegundos
-    setInterval(incrementCounter, fortyMinutes); // Incrementa cada 40 minutos
+    const fortyFiveMinutes = 45 * 60 * 1000; // 45 minutos en milisegundos
+    setInterval(incrementCounter, fortyFiveMinutes); // Incrementa cada 45 minutos
 }
+
+// Inicializa el contador y comienza el auto-incremento
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCounter();
+    startAutoIncrement();
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     initializeCounter();
