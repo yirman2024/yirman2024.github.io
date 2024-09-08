@@ -6,8 +6,8 @@ const countdownElement = {
     seconds: document.getElementById('seconds')
 };
 
-// Tiempo inicial en milisegundos (9 horas y 25 minutos)
-const initialTime = (9 * 60 * 60 * 1000) + (24 * 60 * 1000);
+// Tiempo inicial en milisegundos (5 horas y 25 minutos)
+const initialTime = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -52,59 +52,37 @@ function closeModal(modalId) {
 
 
 
-//muesta el anuncio del codigo de promocion
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Mostrar el modal al cargar la página
-    document.getElementById('promoModal').style.display = 'block';
-    moveCarousel(0); // Inicializa el carrusel mostrando la primera imagen
-});
 
-function closePromoModal() {
+// Mostrar la ventana de promoción al cargar la página
+window.onload = function() {
+    document.getElementById('promoModal').style.display = 'flex';
+};
+
+// Función para cerrar la ventana de promoción
+function closePromo() {
     document.getElementById('promoModal').style.display = 'none';
 }
 
 
 
-
-
-// Seleccionar todas las estrellas
-const stars = document.querySelectorAll('.star');
-const ratingValue = document.getElementById('rating-value');
-
-// Función para actualizar la calificación
-function updateRating(value) {
-    localStorage.setItem('rating', value); // Guardar en Local Storage
-    ratingValue.textContent = value;
-    stars.forEach(star => {
-        star.classList.toggle('active', parseInt(star.dataset.value) <= value);
-    });
-}
-
-// Cargar la calificación desde Local Storage al cargar la página
+//funcion para la ventana de cierre
 document.addEventListener('DOMContentLoaded', () => {
-    const storedRating = localStorage.getItem('rating');
-    if (storedRating) {
-        updateRating(parseInt(storedRating));
+    const promoModal = document.getElementById('promoModal');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Función para cerrar la ventana de promoción
+    function closeModal() {
+        promoModal.style.display = 'none';
     }
-});
 
-// Agregar eventos de hover y click a las estrellas
-stars.forEach(star => {
-    star.addEventListener('mouseover', () => {
-        const value = parseInt(star.dataset.value);
-        stars.forEach(star => {
-            star.classList.toggle('hover', parseInt(star.dataset.value) <= value);
-        });
-    });
+    // Cerrar la ventana de promoción al hacer clic en el botón de cierre
+    closeBtn.addEventListener('click', closeModal);
 
-    star.addEventListener('mouseout', () => {
-        stars.forEach(star => {
-            star.classList.remove('hover');
-        });
-    });
-
-    star.addEventListener('click', () => {
-        updateRating(parseInt(star.dataset.value));
+    // Opcional: Cerrar la ventana de promoción al hacer clic fuera de la ventana
+    window.addEventListener('click', (event) => {
+        if (event.target === promoModal) {
+            closeModal();
+        }
     });
 });
