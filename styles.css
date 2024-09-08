@@ -1,861 +1,744 @@
-/* Estilos generales para el cuerpo de la página */
 body {
-    margin: 0; /* Quita el margen por defecto del cuerpo */
-    font-family: 'Arial', sans-serif; /* Fuente principal del texto */
-    background: #1a0023; /* Cambia el color de fondo de la página en general */
-    /* background-image: url('img/fondo\ general.png'); /* Ruta de la imagen de fondo, comentada para alternar */
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-attachment: fixed; /* La imagen de fondo se mantiene fija al hacer scroll */
-    background-position: center; /* Centra la imagen de fondo */
-    color: #fff; /* Color del texto en toda la página */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1a0023; /*aqui cambias el color de fondo de la pagina en general*/
+   /* background-image: url('img/fondo\ general.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
+    background-position: center; /* Centra la imagen */
+    color: #fff;
 }
 
-/* Contenedor principal */
 .container {
-    max-width: 850px; /* Define el ancho máximo del contenedor */
-    margin: 130px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
-    padding: 20px; /* Espaciado interno dentro del contenedor */
-    background-color: #25002d; /* Color de fondo del contenedor */
-    color: #fff; /* Color del texto dentro del contenedor */
-    border-radius: 10px; /* Bordes redondeados del contenedor */
-    box-shadow: 0 0 10px #ff0076; /* Sombra con un tono de rosa neón menos difuminada */
-}
-
-/* Encabezado principal de la página */
-header {
-    text-align: center; /* Centra el texto dentro del encabezado */
-    margin-bottom: 20px; /* Añade un margen inferior para separar el encabezado del contenido siguiente */
-}
-
-/* Estilos para el título principal (h1) */
-h1 {
-    font-size: 2em; /* Tamaño de la fuente del título */
-    color: #fff; /* Color del texto del título */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Sombra suave para dar un efecto de neón menos intenso */
-}
-
-/* Contenedor para el video */
-.video-container {
-    text-align: center; /* Centra el contenido dentro del contenedor del video */
-    margin: 20px 0; /* Margen superior e inferior para separar del contenido adyacente */
-    border-radius: 12px; /* Bordes redondeados para el contenedor del video */
-    overflow: hidden; /* Oculta el contenido que se desborda del contenedor, mantiene los bordes redondeados */
-}
-
-/* Estilos específicos para los elementos de video */
-video {
-    width: 100%; /* El video ocupa el 100% del ancho del contenedor */
-    height: auto; /* Ajusta la altura proporcionalmente para mantener la relación de aspecto */
-    border-radius: 12px; /* Bordes redondeados para el video */
-    box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3); /* Sombra debajo del video para darle profundidad */
-}
-
-/* Sección destacada para resaltar contenido importante */
-.highlight {
-    text-align: center; /* Centra el texto dentro de la sección destacada */
-    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
-    background: #1a0012; /* Fondo oscuro para resaltar */
-    padding: 11px; /* Espaciado interno dentro de la sección destacada */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto de neón con sombras múltiples */
-}
-
-/* Estilos para los encabezados (h2) y párrafos dentro de la sección destacada */
-.highlight h2, .highlight p {
-    margin: 10px 0; /* Margen superior e inferior para espaciado */
-}
-
-/* Estilo para el texto destacado dentro de la sección .highlight */
-.highlight-text {
-    color: #00ff00; /* Color verde brillante para destacar aún más el texto */
-    font-weight: bold; /* Negrita para resaltar el texto */
-}
-
-/* Contenedor principal para la cuenta regresiva */
-.countdown {
-    display: flex; /* Utiliza flexbox para alinear elementos en línea */
-    justify-content: center; /* Centra horizontalmente los elementos hijos */
-    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
-    font-size: 1.5em; /* Tamaño de fuente más grande para la cuenta regresiva */
-}
-
-/* Sección individual dentro de la cuenta regresiva */
-.countdown-section {
-    display: flex; /* Flexbox para alinear los elementos en columna */
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra los elementos hijos horizontalmente */
-    margin: 0 10px; /* Margen lateral para separar las secciones */
-}
-
-/* Estilos para los números y textos de la cuenta regresiva */
-.countdown-section span {
-    display: block; /* Hace que cada número/etiqueta sea un bloque */
-    color: #00ff00; /* Color verde brillante para los números */
-    font-weight: bold; /* Negrita para destacar los números */
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Efecto de sombra neón verde */
-    padding: 10px; /* Espacio interno para los números */
-    background: #333; /* Fondo oscuro para resaltar los números */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Etiquetas de tiempo en la cuenta regresiva */
-.label {
-    margin-top: 5px; /* Margen superior para separar del número */
-    color: #fff; /* Texto blanco para las etiquetas */
-}
-
-/* Estilos para ofertas y precios */
-.offer, .price {
-    text-align: center; /* Centra el texto dentro de estas secciones */
-    margin: 20px 0; /* Margen superior e inferior */
-}
-
-/* Estilo específico para la oferta */
-.offer {
-    color: #ffff00; /* Color amarillo para destacar ofertas */
-    font-size: 1.5em; /* Tamaño de fuente grande para las ofertas */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de neón rojo menos intenso */
-}
-
-/* Estilo específico para el precio */
-.price {
-    color: #ff0000; /* Color rojo para destacar los precios */
-    font-size: 1.5em; /* Tamaño de fuente grande para los precios */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de neón rojo menos intenso */
-}
-
-
-/* Botón de llamada a la acción (CTA) */
-.cta-button {
-    display: block; /* Hace que el botón ocupe el ancho completo disponible */
-    margin: 20px auto; /* Centra el botón y le da espacio superior e inferior */
-    padding: 15px 30px; /* Espacio interno del botón */
-    background-color: #ffff00; /* Fondo amarillo para el botón */
-    color: #000; /* Texto negro para mejor contraste */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    font-size: 1.2em; /* Tamaño de fuente más grande */
-    cursor: pointer; /* Cambia el cursor a pointer al pasar por encima */
-    text-shadow: 0 0 3px #000; /* Sombra leve para el texto del botón */
-    box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Sombra suave amarilla para el botón */
-    transition: background 0.3s ease; /* Transición suave al cambiar el fondo */
-}
-
-/* Efecto hover para el botón CTA */
-.cta-button:hover {
-    background-color: #e6e600; /* Fondo más oscuro cuando el cursor está encima */
-    box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Sombra más pronunciada al hacer hover */
-}
-
-/* Contenedor para el programa */
-.program {
-    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
-}
-
-/* Estilos para los encabezados dentro de la sección del programa */
-.program h3 {
-    font-size: 1.5em; /* Tamaño de fuente grande para los títulos */
-    margin-bottom: 10px; /* Espacio inferior para separar del contenido */
-}
-/* Estilos para listas dentro de la sección de programas */
-.program ul {
-    list-style-type: disc; /* Aplica viñetas en forma de disco */
-    margin-left: 20px; /* Margen izquierdo para la lista */
-}
-
-/* Estilos para el pie de página */
-footer {
-    text-align: center; /* Centra el contenido del pie de página */
-    margin-top: 20px; /* Espacio superior para separar del contenido anterior */
-}
-
-/* Estilos para los enlaces dentro del pie de página */
-footer a {
-    color: #000000; /* Color negro para los enlaces */
-    text-decoration: none; /* Sin subrayado por defecto */
-}
-
-/* Estilos para los enlaces al pasar el cursor */
-footer a:hover {
-    text-decoration: underline; /* Subraya el texto al pasar el cursor */
-}
-
-/* Estilos responsivos para pantallas con ancho máximo de 768px */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2em; /* Reduce el tamaño de la fuente del título */
-    }
-    
-    .cta-button {
-        padding: 10px 20px; /* Ajusta el espaciado interno del botón */
-        font-size: 1em; /* Reduce el tamaño de la fuente del botón */
-    }
-    
-    .offer, .price {
-        font-size: 1.2em; /* Reduce el tamaño de la fuente para ofertas y precios */
-    }
-    
-    .highlight {
-        padding: 15px; /* Ajusta el espaciado interno del contenedor resaltado */
-    }
-}
-
-/* Estilos responsivos para pantallas con ancho máximo de 480px */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5em; /* Reduce aún más el tamaño de la fuente del título */
-    }
-    
-    .cta-button {
-        padding: 8px 15px; /* Ajusta aún más el espaciado interno del botón */
-        font-size: 0.9em; /* Reduce aún más el tamaño de la fuente del botón */
-    }
-    
-    .offer, .price {
-        font-size: 1em; /* Reduce aún más el tamaño de la fuente para ofertas y precios */
-    }
-    
-    .highlight {
-        padding: 10px; /* Ajusta el espaciado interno del contenedor resaltado */
-    }
-    
-    .countdown {
-        font-size: 1.2em; /* Ajusta el tamaño de la fuente de la cuenta regresiva */
-    }
-}
-
-/* Estilos para el contenedor de información */
-.info-container {
-    background-color: #1a1a1a; /* Fondo oscuro para contraste */
-    padding: 10px; /* Espaciado interno del contenedor */
-    margin: 20px 0; /* Espacio superior e inferior */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar el contenedor */
-    max-width: 90%; /* Limita el ancho máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor en la página */
-}
-
-/* Estilos para los encabezados dentro del contenedor de información */
-.info-container h2 {
-    font-size: 1.5em; /* Tamaño del texto para los encabezados */
-    color: #fff; /* Color blanco para el texto */
-    margin-bottom: 10px; /* Espaciado inferior para separar del contenido siguiente */
-}
-
-/* Estilos para los párrafos dentro del contenedor de información */
-.info-container p {
-    font-size: 1.2em; /* Tamaño del texto para los párrafos */
-    color: #ccc; /* Color gris claro para el texto */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin-bottom: 10px; /* Espaciado inferior para separar del contenido siguiente */
-}
-
-/* Estilos responsivos para el contenedor de información en pantallas con ancho máximo de 768px */
-@media screen and (max-width: 768px) {
-    .info-container h2 {
-        font-size: 1.2em; /* Ajusta el tamaño del texto de los encabezados */
-    }
-
-    .info-container p {
-        font-size: 1em; /* Ajusta el tamaño del texto de los párrafos */
-    }
-}
-
-/* Estilos para los números y textos de la cuenta regresiva con menor intensidad del efecto neón */
-.countdown-section span {
-    display: block; /* Hace que cada número/etiqueta sea un bloque */
-    color: #00ff00; /* Color verde brillante para los números */
-    font-weight: bold; /* Negrita para destacar los números */
-    text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00; /* Menor intensidad del efecto neón */
-    padding: 10px; /* Espacio interno para los números */
-    background: #333; /* Fondo oscuro para resaltar los números */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Estilos para el contenedor de información */
-.info-container {
-    background-color: #ffffff; /* Fondo blanco del contenedor */
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Margen superior e inferior */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
-                0 0 20px rgba(255, 0, 0, 0.7); /* Sombra de neón roja más intensa */
-    border: 2px solid rgba(255, 0, 0, 0.5); /* Borde sutil pero visible en rojo */
-    display: flex; /* Utiliza un diseño flexbox */
-    align-items: center; /* Alinea verticalmente el contenido */
-    gap: 20px; /* Espacio entre el texto y la imagen */
-}
-
-/* Estilos para la sección de texto dentro del contenedor de información */
-.info-container .text-content {
-    flex: 1; /* Permite que el texto ocupe el espacio restante disponible */
-}
-
-/* Estilos para los encabezados dentro de la sección de texto */
-.info-container .text-content h2 {
-    font-size: 1.5em; /* Tamaño del texto del encabezado */
-    color: #000000; /* Color negro para el texto */
-    margin-bottom: 15px; /* Espaciado inferior para separar del contenido siguiente */
-}
-
-/* Estilos para los párrafos dentro de la sección de texto */
-.info-container .text-content p {
-    color: #000000; /* Color negro para el texto */
-    margin: 15px 0; /* Margen superior e inferior para separar del contenido */
-    line-height: 1.8; /* Ajusta la separación entre líneas */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Estilos para las listas dentro de la sección de texto */
-.info-container .text-content ul {
-    list-style-type: disc; /* Aplica viñetas en forma de disco */
-    margin-left: 20px; /* Margen izquierdo para la lista */
-    padding-left: 20px; /* Espaciado interno izquierdo para la lista */
-}
-
-/* Estilos para los elementos de la lista dentro de la sección de texto */
-.info-container .text-content li {
-    color: #000000; /* Color negro para el texto */
-    margin: 15px 0; /* Margen superior e inferior para separar del contenido */
-    line-height: 1.8; /* Ajusta la separación entre líneas */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Estilos para las imágenes dentro del contenedor de información */
-.info-container img {
-    max-width: 200px; /* Tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
-}
-
-/* Estilos para la sección de opiniones */
-.opinions {
-    text-align: center; /* Centra el contenido de la sección de opiniones */
-    padding: 20px; /* Espaciado interno */
-}
-
-/* Estilos para la galería de opiniones */
-.opinions-gallery {
-    display: flex; /* Utiliza un diseño flexbox */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    gap: 10px; /* Espacio entre las imágenes */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
-}
-
-/* Estilos para las imágenes en la galería de opiniones */
-.opinion-img {
-    width: 100px; /* Ancho fijo para las imágenes */
-    height: auto; /* Mantiene la proporción de la imagen */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
-    transition: transform 0.2s; /* Transición suave para el efecto de escala */
-}
-
-/* Estilos para las imágenes en la galería al pasar el cursor */
-.opinion-img:hover {
-    transform: scale(1.1); /* Escala la imagen ligeramente al pasar el cursor */
-}
-/* Estilos generales para el modal */
-.modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Posiciona el modal de manera fija */
-    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 100%; /* Ocupa toda la altura de la pantalla */
-    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
-}
-
-/* Estilos para el contenido dentro del modal */
-.modal-content {
-    position: relative; /* Posiciona el contenido de manera relativa */
-    margin: 10% auto; /* Centra el modal verticalmente y horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    width: 80%; /* Ancho del modal */
-    max-width: 600px; /* Ancho máximo del modal */
-    background-color: #fff; /* Fondo blanco para el contenido del modal */
-    border-radius: 15px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto dentro del modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
-}
-
-/* Estilos para las imágenes dentro del contenido del modal */
-.modal-content img {
-    width: 100%; /* Ancho completo de la imagen */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Estilos para el botón de cierre del modal */
-.close {
-    position: absolute; /* Posiciona el botón de cierre de manera absoluta */
-    top: 10px; /* Espaciado superior desde el borde del modal */
-    right: 20px; /* Espaciado derecho desde el borde del modal */
-    font-size: 30px; /* Tamaño de la fuente para el botón de cierre */
-    font-weight: bold; /* Negrita para el texto del botón de cierre */
-    color: #000; /* Color negro para el texto del botón de cierre */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
-    transition: color 0.3s ease; /* Transición suave para el cambio de color */
-}
-
-/* Estilos para el botón de cierre al pasar el cursor */
-.close:hover {
-    color: red; /* Cambia el color a rojo al pasar el cursor */
-}
-
-/* Estilos para la sección de opiniones */
-.opinions {
-    text-align: center; /* Centra el texto en la sección de opiniones */
-    padding: 20px; /* Espaciado interno de la sección */
-}
-
-/* Estilos para la galería de opiniones */
-.opinions-gallery {
-    display: flex; /* Utiliza un diseño flexbox */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    gap: 10px; /* Espacio entre las imágenes */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
-}
-
-/* Estilos para las imágenes de opiniones */
-.opinion-img {
-    width: 100px; /* Ancho fijo para las imágenes */
-    height: auto; /* Mantiene la proporción de la imagen */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
-}
-
-/* Estilos para las imágenes al pasar el cursor */
-.opinion-img:hover {
-    transform: scale(1.1); /* Escala la imagen ligeramente */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda */
-}
-
-/* Estilos para el texto destacado */
-.highlighted-text {
-    font-size: 2em; /* Tamaño de fuente aumentado */
-    color: #fff; /* Color blanco */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Efecto de sombra de texto */
-}
-
-/* Estilos para el contador de compras */
-.purchase-counter {
-    text-align: center; /* Centra el texto en la sección del contador */
-    margin: 50px 0; /* Margen superior e inferior */
-    padding: 8px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 0 10px #ff0076, 0 0 10px #ff0076, 0 0 10px #ff0076; /* Sombra de neón morado */
-    border: 2px solid rgba(128, 0, 128, 0.7); /* Borde morado sutil */
-}
-
-/* Título con efecto 3D en el contador de compras */
-.purchase-counter h2 {
-    font-size: 24px; /* Tamaño del texto del título */
-    color: #000000; /* Color negro */
-    margin-bottom: 20px; /* Espaciado inferior para separar del contador */
-    text-shadow: 2px 2px 4px #c2bdbd, -2px -2px 4px rgba(255, 255, 255, 0.2); /* Efecto de sombra 3D */
-}
-
-/* Contador con efecto 3D */
-.counter {
-    font-size: 48px; /* Tamaño del texto del contador */
-    color: #6b065a; /* Color morado oscuro */
-    font-weight: bold; /* Negrita para el texto del contador */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.2); /* Efecto de sombra 3D */
-}
-
-/* Estilos para el contenedor de video */
-.video-container video {
-    width: 100%; /* Ancho completo del contenedor */
-    height: auto; /* Mantiene la proporción del video */
-    image-rendering: auto; /* Ajusta la calidad de la imagen */
-    image-rendering: crisp-edges; /* Mejora la nitidez de los bordes */
-    image-rendering: pixelated; /* Efecto pixelado para una apariencia retro */
-}
-
-/* Estilos para el contenedor principal del carrusel */
-.carousel {
-    position: relative; /* Permite la posición absoluta de los botones de navegación */
-    max-width: 940px; /* Ancho máximo fijo del carrusel */
-    height: 595px; /* Altura fija del carrusel */
-    overflow: hidden; /* Oculta contenido fuera de los límites */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
-}
-
-/* Estilos para el contenedor interno de las imágenes del carrusel */
-.carousel-inner {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    transition: transform 0.5s ease-in-out; /* Suaviza la transición de desplazamiento */
-}
-
-/* Estilos para las imágenes dentro del carrusel */
-.carousel-inner img {
-    width: 100%; /* Ancho completo de la imagen */
-    height: 100%; /* Altura completa de la imagen */
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente */
-}
-
-/* Estilos para los botones de navegación del carrusel */
-.carousel-button {
-    position: absolute; /* Posiciona los botones en relación con el carrusel */
-    top: 50%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajusta la posición vertical */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    color: white; /* Color del texto */
-    border: none; /* Elimina el borde */
-    padding: 10px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar sobre */
-    font-size: 18px; /* Tamaño del texto */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
-}
-
-
-/* Estilos para los botones de navegación al pasar el cursor */
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Cambia a un fondo más oscuro al pasar el cursor */
-}
-
-/* Estilos específicos para el botón de retroceso */
-.carousel-button.prev {
-    left: 10px; /* Posiciona el botón de retroceso a la izquierda */
-}
-
-/* Estilos específicos para el botón de avance */
-.carousel-button.next {
-    right: 10px; /* Posiciona el botón de avance a la derecha */
-}
-
-/* Estilos para el modal de promoción de código */
-.modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Posiciona el modal de manera fija en la pantalla */
-    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
-    left: 0; /* Posiciona el modal en el borde izquierdo de la pantalla */
-    top: 0; /* Posiciona el modal en el borde superior de la pantalla */
-    width: 100%; /* Ancho completo de la pantalla */
-    height: 100%; /* Altura completa de la pantalla */
-    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
-}
-
-/* Estilos para el contenido del modal */
-.modal-content {
-    background-color: #fefefe; /* Fondo blanco para el contenido del modal */
-    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #888; /* Borde gris claro alrededor del modal */
-    width: 80%; /* Ancho del modal */
-    max-width: 400px; /* Ancho máximo del modal */
-    text-align: center; /* Centra el texto dentro del modal */
-}
-
-/* Estilos para el botón de cierre del modal */
-.close {
-    color: #aaa; /* Color gris claro para el botón de cierre */
-    float: right; /* Posiciona el botón de cierre a la derecha */
-    font-size: 28px; /* Tamaño del texto del botón de cierre */
-    font-weight: bold; /* Negrita para el texto del botón de cierre */
-}
-
-/* Estilos para el botón de cierre del modal */
-.close:hover,
-.close:focus {
-    color: black; /* Cambia el color del botón de cierre al negro al pasar el cursor o al enfocar */
-    text-decoration: none; /* Elimina cualquier subrayado */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-}
-
-/* Estilos para el modal */
-.modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Fija el modal en una posición específica en la pantalla */
-    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del modal */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
-}
-/* Estilos para el contenido del modal */
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
+    max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
+    margin: 200px auto; /* Margen superior e inferior de 50px */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    color: black;
-    font-size: 24px;
+    background-color: #25002d; /* Fondo negro */
+    color: #fff; /* Texto blanco */
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 0, 0.7);
-    text-shadow: 1px 1px 2px #333, 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px #ff0076; /* Menos difuminado */
 }
 
-/* Estilos para el código promocional dentro del modal */
-.promo-code {
-    color: red;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
-}
 
-/* Estilos para el botón de cierre del modal */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Estilos para el precio destacado */
-.price {
-    color: #ff5722;
-    font-size: 28px;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    animation: pulse 1.5s infinite;
-    max-width: 600px;
-    margin: 0 auto;
+header {
     text-align: center;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
-/* Definición de la animación de pulso */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(255, 87, 34, 1);
-    }
-}
-
-/* Estilo para la cantidad destacada */
-.highlight-amount {
-    color: #ff0000;
-    font-weight: bold;
-    font-size: 28px;
-}
-
-/* Estilos para el logo */
-.logo {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    width: 190px;
-    height: auto;
-    image-rendering: -webkit-optimize-contrast;
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .logo {
-        width: 150px;
-        top: 5px;
-        left: 5px;
-    }
-
-    .modal-content {
-        width: 90%;
-        max-width: none;
-        font-size: 18px;
-    }
-
-    .price {
-        font-size: 24px;
-    }
-
-    .whatsapp-button {
-        width: 50px;
-        height: 50px;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    button, .whatsapp-button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-    
-    .content-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .promo-text, .countdown, .price-highlight, .buy-now {
-        margin: 0;
-        padding: 0;
-        line-height: 1.2;
-    }
-    
-    .promo-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-    
-    .countdown {
-        font-size: 16px;
-        margin-top: 5px;
-    }
-
-    .price-highlight {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 5px 10px;
-        margin-top: 5px;
-    }
-
-    .buy-now {
-        margin-top: 10px;
-        padding: 10px 20px;
-    }
-}
-
-/* Estilos para el botón de WhatsApp */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
-}
-
-/* Estilos para el anuncio en la parte superior */
-.top-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #b9049b;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos para el texto destacado */
-.highlight {
-    margin-top: -10px;
-    position: relative;
-    top: -12px;
-}
-
-/* Estilo base para las estrellas de calificación */
-.rating {
-    display: flex;
+h1 {
     font-size: 2em;
-    color: #ccc;
-    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
 }
 
-.rating .star {
-    transition: color 0.2s;
-}
-
-.rating .star.active,
-.rating .star:hover,
-.rating .star.hover {
-    color: #ffcc00;
-}
-
-/* Optimiza el tamaño de las imágenes en pantallas pequeñas */
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Ajusta el tamaño de las fuentes para pantallas pequeñas */
-body {
-    font-size: 16px;
-}
-
-/* Botones más grandes y espaciados en dispositivos móviles */
-button, .whatsapp-button {
-    padding: 15px 25px;
-    font-size: 18px;
-}
-
-/* Contenedor principal del carrusel */
-.carousel {
-    position: relative;
-    max-width: 940px;
-    height: 595px;
-    overflow: hidden;
-    margin: 60px auto 0;
-}
-
-/* Contenedor adicional para el contenido específico */
-.content-container {
-    position: relative;
-    padding: 20px;
-    margin-top: 20px;
+.video-container {
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.content-container h2 {
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(32, 0, 28, 0.3);
+}
+
+.highlight {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #1a0012;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ff0076, 0 0 10px #ff0076, 0 0 20px #ff0076; /* Efecto neón */
+}
+
+.highlight h2, .highlight p {
+    margin: 10px 0;
+}
+
+.highlight-text {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.countdown-section span {
+    display: block;
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.label {
+    margin-top: 5px;
+    color: #fff;
+}
+
+.offer, .price {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.offer {
+    color: #ffff00;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+}
+
+.price {
+    color: #ff0000;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
+}
+
+.cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #ffff00; /* Color amarillo */
+    color: #000; /* Texto negro para contraste */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Menos difuminado en el botón */
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6e600; /* Amarillo más oscuro al pasar el cursor */
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Menos difuminado en el hover */
+}
+
+.program {
+    margin-bottom: 20px;
+}
+
+.program h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.content-container .timer {
+.program ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #000000; /* Colo de aviso legal */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    
+    .offer, .price {
+        font-size: 1.2em;
+    }
+    
+    .highlight {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .cta-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    
+    .offer, .price {
+        font-size: 1em;
+    }
+    
+    .highlight {
+        padding: 10px;
+    }
+    
+    .countdown {
+        font-size: 1.2em;
+    }
+}
+
+.info-container {
+    background-color: #1a1a1a; /* Fondo oscuro para contraste */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    max-width: 90%; /* Tamaño máximo del contenedor */
+    margin: 20px auto; /* Centramos el contenedor y añadimos margen */
+}
+
+.info-container h2 {
+    font-size: 1.5em; /* Tamaño del texto de encabezado */
+    color: #fff; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.info-container p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    color: #ccc; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .info-container h2 {
+        font-size: 1.2em; /* Tamaño del texto en pantallas más pequeñas */
+    }
+
+    .info-container p {
+        font-size: 1em; /* Tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+/*reduce la intensidad del efecto neon del temporizador*/
+.countdown-section span {
+    display: block;
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00; /* Menos intensidad en el efecto neón */
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+
+
+/* Ajusta la separación entre líneas */
+.info-container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(255, 0, 0, 0.7); /* Sombra de neón roja más intensa */
+    border: 2px solid rgba(255, 0, 0, 0.5); /* Borde sutil pero más visible rojo */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.info-container .text-content {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.info-container .text-content h2 {
+    font-size: 1.5em;
+    color: #000000; /* Texto negro */
+    margin-bottom: 15px;
+}
+
+.info-container .text-content p {
+    color: #000000; /* Texto negro */
+    margin: 15px 0;
+    line-height: 1.8; /* Ajusta la separación entre líneas */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.info-container .text-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.info-container .text-content li {
+    color: #000000; /* Texto negro */
+    margin: 15px 0;
+    line-height: 1.8; /* Ajusta la separación entre líneas */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.info-container img {
+    max-width: 200px; /* Tamaño máximo de la imagen aumentado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Esquinas redondeadas de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
+}
+
+
+/*estilos para la secsion de opiniones*/
+
+.opinions {
+    text-align: center;
+    padding: 20px;
+}
+
+.opinions-gallery {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+
+.opinion-img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.opinion-img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
     font-weight: bold;
-    color: #d9534f;
+    color: #000;
+    cursor: pointer;
 }
 
-.content-container .offer {
-    margin-top: 10px;
-    font-size: 1.4em;
-    color: #28a745;
+.close:hover {
+    color: red;
 }
 
-.content-container .buy-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #007bff;
+
+/*ESTILOS CON EFECTO 3D DE LA VENTANA EMERGENTE*/
+
+.opinions {
+    text-align: center;
+    padding: 20px;
+}
+
+.opinions-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.opinion-img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D */
+}
+
+.opinion-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.25); /* Sombra más profunda al pasar el mouse */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 15px; /* Bordes redondeados para la ventana emergente */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombra 3D para la ventana emergente */
+}
+
+.modal-content img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Borde redondeado para la imagen dentro del modal */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: red;
+}
+
+.highlighted-text {
+   
+    font-size: 2em;
     color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
 }
 
-.content-container .buy-button:hover {
-    background-color: #0056b3;
+
+
+/* Estilos para el logo fuera del contenedor */
+.site-header {
+    position: relative;
 }
+
+.logo {
+    position: absolute;
+    top: -170px; /* Aumenta el valor negativo para subir el logo más arriba */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para centrar perfectamente */
+    width: 190px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    image-rendering: -webkit-optimize-contrast; /* Mejora la nitidez en algunos navegadores */
+}
+
+
+
+
+.purchase-counter {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.purchase-counter h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-size: 48px;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+
+
+/* Contenedor del contador con efecto neón morado */
+.purchase-counter {
+    text-align: center;
+    margin: 50px 0;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ff0076, 0 0 10px #ff0076, 0 0 10px #ff0076;
+    border: 2px solid rgba(128, 0, 128, 0.7);
+}
+
+/* Título con efecto 3D */
+.purchase-counter h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #c2bdbd, -2px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Contador con efecto 3D */
+.counter {
+    font-size: 48px;
+    color: #6b065a;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.2);
+}
+
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+
+/* Estilos para la sección del contador de compradores */
+.purchase-counter {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.purchase-counter h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #ff0000; /* Color inicial */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta un poco el tamaño */
+        color: #ff2600; /* Color más vivo */
+    }
+    100% {
+        transform: scale(1);
+        color: #ff0000; /* Vuelve al color inicial */
+    }
+}
+
+.price {
+    font-size: 1.5em; /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    animation: pulse 1s infinite; /* Aplica la animación */
+    transition: transform 0.3s;
+}
+
+/* Estilos para el texto del precio  con fondo blanco */
+.price-highlight {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000; /* Color del texto */
+    padding: 10px; /* Espaciado interno alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el ancho del fondo al texto */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+
+
+
+
+
+
+
+/* Estilos para la ventana de promoción */
+.promo-modal {
+    display: flex; /* Se muestra como flex */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 1000; /* Se muestra por encima de otros elementos */
+}
+
+.promo-content {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 500px; /* Ancho máximo de la ventana */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    max-height: 300px; /* Altura máxima de la ventana */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado alto */
+    border: 2px solid #800080; /* Borde morado */
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.7); /* Efecto neón morado */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px; /* Tamaño del icono */
+    font-weight: bold;
+    color: #333; /* Color del icono */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves para el color y transformación */
+}
+
+.close-btn:hover {
+    color: #d32f2f; /* Cambia el color al pasar el mouse */
+    transform: scale(1.2); /* Agranda el icono al pasar el mouse */
+}
+
+.close-btn:active {
+    transform: scale(1.1); /* Agranda un poco al hacer clic */
+}
+
+/* Estilos para el texto del código de descuento */
+.promo-text {
+    font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #800080; /* Color morado sobresaliente */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efecto 3D */
+    line-height: 0.1; /* Reduce el espaciado entre líneas */
+    margin-bottom: 2px; /* Reduce la distancia con el código de promoción */
+}
+
+/* Estilos para el texto del código de promoción */
+.promo-code {
+    font-size: 2em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #ff0000; /* Color del código */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Efecto 3D más intenso */
+}
+
+
+
+
+
+
+
+/* Estilos para el Anuncio Fijo Superior */
+.top-banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #dd02a6; /* Color de fondo del banner */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    z-index: 1000; /* Asegura que el banner esté sobre otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease; /* Transición de color suave */
+}
+
+.top-banner p {
+    margin: 0; /* Quita márgenes del texto */
+}
+
+/* Opcional: Cambiar el color del fondo al pasar el cursor */
+.top-banner:hover {
+    background-color: #dd02a6; /* Cambia ligeramente el tono del fondo al pasar el ratón */
+}
+
+/* Asegurarse que no tape otros elementos */
+body {
+    margin-top: 50px; /* Desplaza el contenido hacia abajo para no tapar el banner */
+}
+
+
+
+
+/*color para los precios*/
+.highlight-price {
+    color: #000000; /* Color llamativo para resaltar el precio */
+    font-weight: bold; /* Hace el texto más grueso */
+    background-color: #ffe603; /* Fondo amarillo para destacar */
+    padding: 2px 5px; /* Espaciado alrededor del texto para mejor visibilidad */
+    border-radius: 3px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para mayor destaque */
+}
+
