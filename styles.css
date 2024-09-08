@@ -12,7 +12,7 @@ body {
 
 .container {
     max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
-    margin: 200px auto; /* Margen superior e inferior de 50px */
+    margin: 230px auto; /* Margen superior e inferior de 50px */
     padding: 20px;
     background-color: #25002d; /* Fondo negro */
     color: #fff; /* Texto blanco */
@@ -109,26 +109,43 @@ video {
     font-size: 1.5em;
     text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Menos intensidad en el efecto neón */
 }
-
 .cta-button {
     display: block;
     margin: 20px auto;
-    padding: 15px 30px;
+    padding: 1em 2em; /* Padding ajustado para dispositivos móviles */
     background-color: #ffff00; /* Color amarillo */
     color: #000; /* Texto negro para contraste */
     border: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Aumenta el tamaño del texto */
+    font-weight: 550; /* Hacer la fuente más gruesa (peso 700) */
+    font-family: 'Arial', sans-serif; /* Tipo de letra sans-serif */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
     cursor: pointer;
-    text-shadow: 0 0 3px #000;
+    text-shadow: 0 0 3px #222121; /* Sombra del texto para mayor contraste */
     box-shadow: 0 0 3px rgba(255, 255, 0, 0.5); /* Menos difuminado en el botón */
     transition: background 0.3s ease;
+    width: 80vw; /* Ancho adaptativo */
+    max-width: 400px; /* Ancho máximo */
+    min-width: 150px; /* Ancho mínimo */
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+    .cta-button {
+        padding: 0.8em 1.5em; /* Padding más pequeño en pantallas grandes */
+        font-size: 1.2em; /* Tamaño del texto ajustado para pantallas grandes */
+    }
 }
 
 .cta-button:hover {
     background-color: #e6e600; /* Amarillo más oscuro al pasar el cursor */
     box-shadow: 0 0 8px rgba(255, 255, 0, 0.5); /* Menos difuminado en el hover */
 }
+
+
+
 
 .program {
     margin-bottom: 20px;
@@ -741,4 +758,98 @@ body {
     border-radius: 3px; /* Bordes ligeramente redondeados */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para mayor destaque */
 }
+
+
+
+/*ESTILOS PARA ADAPTABILIDAD A OTROS DISPOSITIVOS*/
+/* Estilos generales */
+
+
+
+
+
+/* Media Queries para Responsividad */
+
+/* Móviles pequeños (hasta 600px) */
+@media (max-width: 600px) {
+    .promo-content {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .price-highlight {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    .price {
+        font-size: 1.2em;
+    }
+}
+
+/* Tabletas (601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .promo-content {
+        padding: 15px;
+        width: 85%;
+    }
+
+    .carousel-container {
+        max-width: 90%;
+    }
+
+    .price-highlight {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .price {
+        font-size: 1.3em;
+    }
+}
+
+/* Pantallas grandes (mayores de 900px) */
+@media (min-width: 901px) {
+    .promo-content {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .carousel-container {
+        max-width: 80%;
+    }
+
+    .price-highlight {
+        font-size: 1.5em;
+        padding: 12px;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+/*efecto 3d para el texto de la cabecera*/
+
+.text-3d {
+    font-size: 1.2em; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #ffffff; /* Color del texto principal */
+    text-shadow: 
+        1px 1px 1px rgba(0, 0, 0, 0.4), /* Sombra principal */
+        1px 1px 1px rgba(0, 0, 0, 0.3), /* Sombra secundaria */
+        3px 3px 3px rgba(0, 0, 0, 0.2); /* Sombra terciaria */
+    transform: perspective(3px) rotateX(0deg) rotateY(0deg); /* Efecto de perspectiva */
+}
+
 
