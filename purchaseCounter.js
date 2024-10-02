@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', () => {
             incrementCounter();
             // Aquí puedes redirigir o realizar otras acciones según tu necesidad
-            window.location.href = 'https://007aa4-22.myshopify.com/products/tenis-samba-unisex';
+            window.location.href = 'https://wa.link/idfw5j';
         });
     });
 });
